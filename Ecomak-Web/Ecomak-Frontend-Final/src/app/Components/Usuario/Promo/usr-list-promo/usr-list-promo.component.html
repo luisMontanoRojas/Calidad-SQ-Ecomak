@@ -1,0 +1,38 @@
+<header class="masthead">
+    <div class="container">
+        <div class="intro-text">
+            <div class="intro-heading text-uppercase">Promociones</div>
+            <div class="intro-lead-in">Obtén Promociones Especiales de Ecomak!</div>
+        </div>
+    </div>
+</header>
+
+<div class="container">
+    <div class="jumbotron">
+        <div class="alert alert-success" *ngIf="data.length === 0" role="alert">
+            <h1>No tenemos Promociones disponibles!</h1>
+            <h3>Proximamente mas promociones...</h3>
+        </div>
+        <div class="row  ">
+            <div class="col-sm-12 col-md-6 " *ngFor="let promo of data">
+
+                <div class="card justify-content-center">
+                    <div class="imgBx">
+                        <img src="{{api}}{{promo.image}}" alt="promotion" class=" imagen card-img-top" (click)="onVer(promo)">
+
+                    </div>
+                    <div class="card-block  text-center">
+                        <h1 class="card-title ">{{promo.tittle}}</h1>
+                        <p class="card-text ">Desde: {{promo.iniDateUser}}</p>
+                        <p class="card-text ">Hasta: {{promo.endDateUser}}</p>
+                        <div class="detail">
+                            <button (click)="onVer(promo)" mat-raised-button color="primary">Detalle</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>

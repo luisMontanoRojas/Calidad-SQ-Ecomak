@@ -1,0 +1,15 @@
+header.masthead {
+    text-align: center;
+    color: white;
+    background-image: url("../../../../../assets/header/fondos paginas 1920x440 px-05-03.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+}
+
+.circles {
+    margin-top: 20px;
+    border-radius: 10%;
+    background-size: cover;
+}

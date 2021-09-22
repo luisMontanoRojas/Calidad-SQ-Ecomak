@@ -1,0 +1,38 @@
+.tableM {
+    margin: 20px;
+}
+
+h2 {
+    color: #2193b0;
+}
+header.masthead {
+    text-align: center;
+    color: white;
+     background-image: url("../../../../../assets/header/trabajosRealizados.png"); 
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+  }
+  .btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    float: left;
+  }
+  .btn:hover {
+    background-color: #ddd;
+  }
+  .btn.active {
+    background-color: rgb(106, 228, 126);
+    color: white;
+  }
+  
+  .row{
+      width: 100%;
+  }
+  .filtro{
+    margin-bottom: 15px !important;
+  }

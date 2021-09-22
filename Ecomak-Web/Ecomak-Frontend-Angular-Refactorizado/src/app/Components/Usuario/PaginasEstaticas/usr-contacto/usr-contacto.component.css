@@ -1,0 +1,41 @@
+header.masthead {
+    text-align: center;
+    color: white;
+    background-image: url("../../../../../assets/header/contactanos.png");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+  }
+  hr {border-top: 1px solid #000; width:50%;}
+
+  a {color: #000;}
+  
+  a:link{text-decoration:none;}
+  
+  #contact2{
+      letter-spacing:3px;
+  }
+  .section-subheading{
+    margin-bottom: 30px;
+  }
+  .ubication-logo{
+    width: 20px;
+    height: 20px;
+    margin:4px;
+  }
+  .form-control{
+    background-color: rgb(172, 214, 148);
+    border-radius: 3% 3% 3% 3%;
+  }
+  .btn{
+    margin-bottom: 30px;
+    color: white;
+    
+  }
+  
+  #author a{
+    color: #fff;
+    text-decoration: none;
+      
+  }

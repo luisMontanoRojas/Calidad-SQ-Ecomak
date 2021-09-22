@@ -1,0 +1,19 @@
+#team {
+    background: #eee !important;
+}
+
+header.masthead {
+    text-align: center;
+    color: white;
+    background-image: url("../../../../../assets/header/promociones.png");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+}
+
+.circles {
+    margin-top: 20px;
+    border-radius: 10%;
+    background-size: cover;
+}

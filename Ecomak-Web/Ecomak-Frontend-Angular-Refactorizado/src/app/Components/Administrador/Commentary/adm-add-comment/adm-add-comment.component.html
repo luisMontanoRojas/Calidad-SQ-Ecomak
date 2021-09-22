@@ -1,0 +1,36 @@
+<div class="justify-center edit-Form">
+    <div mat-icon-button class="close-button" (click)="onCancelar()">
+        <mat-icon class="close-icon" color="warn">close</mat-icon>
+    </div>
+    <h2 mat-dialog-title>Añadir Comentario</h2>
+
+    <div mat-dialog-content>
+
+        <dl>
+            <mat-form-field appearance="fill" class="edit-full-width">
+                <mat-label>Nombre</mat-label>
+                <input matInput type="text" name="author" [(ngModel)]="author" required>
+            </mat-form-field>
+        </dl>
+        <dl>
+            <mat-form-field appearance="fill" class="edit-full-width">
+                <mat-label>Comentario</mat-label>
+                <input type="text" matInput name="comment" [(ngModel)]="comment" required>
+            </mat-form-field>
+        </dl>
+
+    </div>
+
+    <mat-dialog-actions align="end">
+        <button mat-raised-button color="warn" (click)="onCancelar()">
+            <span class="material-icons">
+                clear
+            </span>
+            Cancelar</button>
+        <button mat-raised-button type="submit" (click)="onSubmit()">
+            <span class="material-icons">
+                done
+            </span>
+            Aceptar</button>
+    </mat-dialog-actions>
+</div>

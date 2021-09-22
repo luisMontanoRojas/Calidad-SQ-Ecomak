@@ -1,0 +1,19 @@
+img{
+    position: absolute;
+    width: 150px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+#centrador{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    
+    
+  }
+  #centrador:hover{ opacity: 1; }
+  #centrador { opacity: 0.6; }
+

@@ -1,0 +1,26 @@
+<section>
+    <div class="container">
+        <div class="jumbotron my-auto">
+            <button routerLink="/admin/trabajos-realizados" mat-raised-button color="primary" id="btnadd">
+                <mat-icon>keyboard_backspace</mat-icon> Atras
+            </button>
+            <div class="row">
+                <div class="col-auto ">
+                    <div class="row">
+                        <h1 style="color: grey;">Categoria:</h1>
+                        <h1>{{category.name}}</h1>
+                    </div>
+                </div>
+                <div class="col-auto align-self-center">
+                    <button (click)="onEditForm(category)" mat-raised-button color="accent">
+                        <mat-icon >edit</mat-icon> Editar
+                    </button>
+                    <button mat-raised-button color="warn" (click)="openDialog()">
+                        <mat-icon >delete</mat-icon> Eliminar
+                    </button>
+                </div>
+            </div>
+            <app-adm-list-productos-tr [idCategoria]="category.id"></app-adm-list-productos-tr>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,33 @@
+<h1>Comentarios: </h1>
+
+<button mat-raised-button color="primary" id="btnadd" (click)="openDialogAdd()">
+    <mat-icon>playlist_add</mat-icon> Añadir Comentario
+</button>
+
+<div *ngFor="let comment of commentaries">
+    <div class="row-12 bootstrap snippets" *ngIf="comment.show">
+        <div class="col-md-12 col-md-offset-12 col-sm-12">
+            <div class="comment-wrapper">
+                <div class="panel panel-info">
+                    <hr>
+                    <ul>
+                        <li class="media">
+                            <a href="#" class="pull-left">
+                                <img src="../../../../../../assets/Comments/user_1.jpg" alt="" class="img-circle">
+                            </a>
+                            <div class="media-body" style="margin: 10px;">
+                                <span class="text-muted pull-right">
+                                                    <small class="text-muted">{{ dateToComment | date:'dd MMM yyyy' | lowercase}}</small>
+                                                </span>
+                                <strong class="text-success"><b>{{ comment.author }}</b>  </strong>
+                                <p>
+                                    {{ comment.comment }}
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,220 @@
+{
+	"info": {
+		"_postman_id": "e7921d7e-8f95-46d7-beb8-4ca54d2e891f",
+		"name": "Ecomak-Tr",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET ALL",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJOYW1lIjoicGludG8iLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjkxMzdjYzI4LWE1YmYtNGQ0ZS04ODkyLWQzMjc3OWI5YzMxZSIsImV4cCI6MTU4ODI4ODI0OSwiaXNzIjoiaHR0cDovL0Vjb21hay5uZXQiLCJhdWQiOiJodHRwOi8vRWNvbWFrLm5ldCJ9.G5-P5Bi2uMDGB2CaGxg3o7MoKLAiEu3LfliS6C1KpTo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:50455/a/api/categoriesTr",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "50455",
+					"path": [
+						"a",
+						"api",
+						"categoriesTr"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET ONE",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:50455/a/api/categoriesTr/2/trs/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "50455",
+					"path": [
+						"a",
+						"api",
+						"categoriesTr",
+						"2",
+						"trs",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJOYW1lIjoicGludG8iLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjkxMzdjYzI4LWE1YmYtNGQ0ZS04ODkyLWQzMjc3OWI5YzMxZSIsImV4cCI6MTU4ODI4ODI0OSwiaXNzIjoiaHR0cDovL0Vjb21hay5uZXQiLCJhdWQiOiJodHRwOi8vRWNvbWFrLm5ldCJ9.G5-P5Bi2uMDGB2CaGxg3o7MoKLAiEu3LfliS6C1KpTo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"nameTr\": \"trstests3\",\r\n        \"quantityTr\": 10,\r\n        \"priceTr\": 54,\r\n        \"photoTr\": \"asd\",\r\n        \"stateTr\": true,\r\n        \"categoryId\": 2\r\n\t\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:50455/a/api/categoriesTr/2/trs",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "50455",
+					"path": [
+						"a",
+						"api",
+						"categoriesTr",
+						"2",
+						"trs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJOYW1lIjoicGludG8iLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjkxMzdjYzI4LWE1YmYtNGQ0ZS04ODkyLWQzMjc3OWI5YzMxZSIsImV4cCI6MTU4ODI4ODI0OSwiaXNzIjoiaHR0cDovL0Vjb21hay5uZXQiLCJhdWQiOiJodHRwOi8vRWNvbWFrLm5ldCJ9.G5-P5Bi2uMDGB2CaGxg3o7MoKLAiEu3LfliS6C1KpTo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"idTr\": 7,\r\n    \"nameTr\": \"MarioBaptiste\",\r\n    \"quantityTr\":100,\r\n    \"priceTr\":50,\r\n    \"stateTr\": false\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:50455/a/api/categoriesTr/2/trs/7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "50455",
+					"path": [
+						"a",
+						"api",
+						"categoriesTr",
+						"2",
+						"trs",
+						"7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJOYW1lIjoicGludG8iLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjkxMzdjYzI4LWE1YmYtNGQ0ZS04ODkyLWQzMjc3OWI5YzMxZSIsImV4cCI6MTU4ODI4ODI0OSwiaXNzIjoiaHR0cDovL0Vjb21hay5uZXQiLCJhdWQiOiJodHRwOi8vRWNvbWFrLm5ldCJ9.G5-P5Bi2uMDGB2CaGxg3o7MoKLAiEu3LfliS6C1KpTo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:50455/a/api/categoriesTr/2/trs/7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "50455",
+					"path": [
+						"a",
+						"api",
+						"categoriesTr",
+						"2",
+						"trs",
+						"7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET TRABAJOS-REALIZADOS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET TR BY ID TR",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:50455/a/api/categoriesTr/2/trs/by_id/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "50455",
+					"path": [
+						"a",
+						"api",
+						"categoriesTr",
+						"2",
+						"trs",
+						"by_id",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

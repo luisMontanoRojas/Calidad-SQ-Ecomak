@@ -1,0 +1,24 @@
+<div mat-icon-button class="close-button" (click)="onClickNo()">
+    <mat-icon class="close-icon" color="warn">close</mat-icon>
+</div>
+
+
+<h3 mat-dialog-title>{{dialogo.titulo}}</h3>
+
+<mat-dialog-content class="mat-typography">
+    <h4>{{dialogo.mensaje}}</h4>
+</mat-dialog-content>
+
+<mat-dialog-actions align="end">
+    <button mat-raised-button (click)="onClickNo()">
+    <span class="material-icons">
+      clear
+    </span>
+    {{dialogo.btnNo}}</button>
+
+    <button mat-raised-button color="warn" [mat-dialog-close]="true">
+    <span class="material-icons">
+      done
+    </span>
+    {{dialogo.btnSi}}</button>
+</mat-dialog-actions>

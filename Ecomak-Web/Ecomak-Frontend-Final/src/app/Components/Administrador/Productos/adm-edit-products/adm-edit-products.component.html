@@ -1,0 +1,63 @@
+<div class="justify-center edit-Form" id="ModalEdit">
+
+    <div mat-icon-button class="close-button" (click)="onCancelar()">
+        <mat-icon class="close-icon" color="warn">close</mat-icon>
+    </div>
+
+    <h2 mat-card-title>Editar Producto</h2>
+
+    <div mat-dialog-content>
+        <form [formGroup]="form" (ngSubmit)="onSubmitEdit()">
+
+            <mat-form-field class="edit-full-width">
+                <input matInput placeholder="Tipo del producto"  [(ngModel)]="productEdit.type" formControlName="productType" required>
+                <mat-error>
+                    Por favor ingrese el tipo del producto
+                </mat-error>
+            </mat-form-field>
+            <mat-form-field class="edit-full-width">
+                <input matInput placeholder="Tela"  [(ngModel)]="productEdit.fabric" formControlName="productFabric" required>
+                <mat-error>
+                    Por favor ingrese el tipo de fabrica
+                </mat-error>
+            </mat-form-field>
+            <mat-form-field class="edit-full-width">
+                <input matInput placeholder="Tipo del diseño"  [(ngModel)]="productEdit.design" formControlName="productDesign" required>
+                <mat-error>
+                    Por favor ingrese el tipo de diseño
+                </mat-error>
+            </mat-form-field>
+            <mat-form-field class="edit-full-width">
+                <input matInput placeholder="Cantidad"   [(ngModel)]="productEdit.quantity"formControlName="productQuantity" required>
+                <mat-error>
+                    Por favor ingrese la cantidad
+                </mat-error>
+            </mat-form-field>
+            <mat-form-field class="edit-full-width">
+                <input matInput placeholder="Tamaño"  [(ngModel)]="productEdit.size" formControlName="productSize" required>
+                <mat-error>
+                    Por favor ingrese el tamaño
+                </mat-error>
+            </mat-form-field>
+            <mat-form-field class="edit-full-width">
+                <input matInput placeholder="Asa" [(ngModel)]="productEdit.handle" formControlName="handle" >
+                <mat-error>
+                    Por favor ingrese el tipo de Asa
+                </mat-error>
+            </mat-form-field>
+        </form>
+    </div>
+
+    <mat-dialog-actions align="end">
+        <button mat-raised-button color="warn" (click)="onCancelar()">
+            <span class="material-icons">
+                clear
+            </span>
+            Cancelar</button>
+        <button mat-raised-button type="submit" (click)="onSubmitEdit()">
+            <span class="material-icons">
+                done
+            </span>
+            Aceptar</button>
+    </mat-dialog-actions>
+</div>

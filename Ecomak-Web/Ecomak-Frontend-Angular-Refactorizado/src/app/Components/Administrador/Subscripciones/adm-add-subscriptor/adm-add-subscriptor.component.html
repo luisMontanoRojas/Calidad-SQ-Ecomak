@@ -1,0 +1,52 @@
+<div class="justify-center edit-Form">
+    <div mat-icon-button class="close-button" (click)="onCancelar()">
+        <mat-icon class="close-icon" color="warn">close</mat-icon>
+    </div>
+    <h2 mat-dialog-title>Añadir Subcripcon</h2>
+
+    <div mat-dialog-content>
+
+        <dl>
+            <mat-form-field appearance="fill" class="edit-full-width">
+                <mat-label>Nombre</mat-label>
+                <input matInput type="text" name="name" [(ngModel)]="name" required>
+            </mat-form-field>
+        </dl>
+        <dl>
+            <mat-form-field appearance="fill" class="edit-full-width">
+                <mat-label>Correo Electronico</mat-label>
+                <input matInput type="email" name="email" [(ngModel)]="email" required>
+            </mat-form-field>
+        </dl>
+        <dl>
+            <mat-form-field appearance="fill" class="edit-full-width">
+                <mat-label>Telefono/Celular</mat-label>
+                <input matInput type="number" name="phone" [(ngModel)]="phone" required>
+            </mat-form-field>
+        </dl>
+        <dl>
+            <mat-form-field appearance="fill" class="edit-full-width">
+                <mat-label>Empresa</mat-label>
+                <input matInput type="text" name="company" [(ngModel)]="company">
+            </mat-form-field>
+        </dl>
+        <dl>
+            <mat-form-field appearance="fill" class="edit-full-width">
+                <mat-label>Mensaje</mat-label>
+                <input matInput type="text" name="message" [(ngModel)]="message">
+            </mat-form-field>
+        </dl>
+    </div>
+    <mat-dialog-actions align="end">
+        <button mat-raised-button color="warn" (click)="onCancelar()">
+            <span class="material-icons">
+                clear
+            </span>
+            Cancelar</button>
+        <button mat-raised-button type="submit" (click)="onSubmit()">
+            <span class="material-icons">
+                done
+            </span>
+            Aceptar</button>
+    </mat-dialog-actions>
+</div>

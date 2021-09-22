@@ -1,0 +1,14 @@
+<div class="card" [ngClass]="setClasses()" >
+    <div class="imgBx">
+        <img [src]="createImgPath(product.photoTr)" alt="product">
+    </div>
+    <div class="details">
+        <h4>{{ product.nameTr }}</h4>
+        <button mat-stroked-button (click)="onDetail(product)">
+            <span class="material-icons">
+                remove_red_eye
+            </span>
+            Detalle
+        </button>
+    </div>
+</div>

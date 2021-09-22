@@ -1,0 +1,25 @@
+<mat-card class="card">
+    <mat-card-header>
+        <mat-card-title>Detalle Trabajo Realizado<br></mat-card-title>
+    </mat-card-header>
+    <a href="#"><img mat-card-image [src]="createImgPath(productTr.photoTr)" alt="product"></a>
+    <mat-card-content>
+            <dt>Name:</dt>
+            <dd>{{productTr.nameTr}}</dd>
+            <dt>Precio:</dt>
+            <dd>{{productTr.priceTr}}</dd>
+            <dt>Cantidad minima:</dt>
+            <dd>{{productTr.quantityTr}}</dd>
+            <dt>Estado:</dt>
+            <dd>{{productTr.stateTr}}</dd>
+    </mat-card-content>
+    <mat-card-actions>
+        <button mat-raised-button color="accent" (click)="onEditForm(productTr)">
+            <mat-icon>edit</mat-icon>
+        </button>
+        <button mat-raised-button color="warn" (click)="openDialog()">
+            <mat-icon>delete</mat-icon>
+        </button>
+        <button mat-raised-button color="primary" id="btnadd" (click)="onClickCerrar()"> Cerrar </button>
+    </mat-card-actions>
+</mat-card>

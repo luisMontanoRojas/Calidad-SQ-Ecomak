@@ -1,0 +1,6 @@
+<h1>Comentarios: </h1>
+<button mat-raised-button color="primary" id="btnadd" (click)="openDialogAdd()">
+    <mat-icon>playlist_add</mat-icon> Añadir Comentario
+</button>
+<app-usr-item-commentary *ngFor="let comment of commentaries" [comment]="comment">
+</app-usr-item-commentary>

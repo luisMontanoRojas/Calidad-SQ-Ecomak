@@ -1,0 +1,116 @@
+<div id="page-top">
+  <header>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner ">
+        <div class="carousel-item active">
+          <img class="d-block  mainimage " src="../../../../../assets/Home Page/BANNERS (1).png" alt="First slide">
+          <div class="carousel-caption ">
+            <h1 class="display-1">BOLSAS REUTILIZABLES</h1>
+            <p class="lead">Publicidad efectiva en movimiento.</p>
+          </div>
+
+        </div>
+        <div class="carousel-item ">
+          <img class="d-block  mainimage" src="../../../../../assets/Home Page/BANNERS (2).png" alt="Second slide">
+          <div class="carousel-caption ">
+            <h1 class="display-1 ">EL FUTURO NO ES DESECHABLE</h1>
+            <p class="lead">Te ofrecemos la mejor forma de hacer publicidad sostenible para tu empresa.</p>
+          </div>
+        </div>
+        <div class="carousel-item ">
+          <img class="d-block mainimage " src="../../../../../assets/Home Page/BANNERS (3).png" alt="Third slide">
+          <div class="carousel-caption  ">
+            <h1 class="display-1">PIENSA GLOBALMENTE Y ACTÚA LOCALMENTE</h1>
+            <p class="lead">!Deja que tu bolsa reutilizable recorra las calles y se encargue hacer conocer tu marca,
+              productos, servicios, red social, dirección o lo que quieras comunicar!</p>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+
+
+  </header>
+  <!-- Que puedes lograr -->
+  <section class="page-section intro">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">QUE PUEDES LOGRAR CON UNA BOLSA ECOMAK?</h2>
+
+          <h3 class="section-subheading text-muted">Los mejores servicios, para los mejores clientes...</h3>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-4  circleinicio ">
+          <div class="circles" (click)="openDialog(data[0])">
+            <h3 class="service-heading">BOLSAS
+              PARA FIESTAS</h3>
+            <p>Dale un toque de exclusividad a las fiestas de tus seres queridos,y un recuerdo diferente a tus
+              invitados.</p>
+          </div>
+        </div>
+        <div class="col-md-4 circleinicio">
+          <div class="circles" (click)="openDialog(data[1])">
+            <h3 class="service-heading">BOLSAS PUBLICITARIAS</h3>
+            <p>Agrega valor a tu producto y a la experiencia de compra de tus clientes, los resultados hablan por si
+              solos.</p>
+          </div>
+        </div>
+        <div class="col-md-4 circleinicio">
+          <div class="circles" (click)="openDialog(data[2])">
+            <h3 class="service-heading">BOLSAS PARA CONCIENTIZAR</h3>
+            <p>Un mensaje ambiental puede incentivar a generar un gran cambio, deja que tu producto lo haga.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="page-section services">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Servicios</h2>
+          <h3 class="section-subheading text-muted">Los mejores servicios, para los mejores clientes...</h3>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-md-4">
+          <img class="servicio-img" src="../../../../../assets/Home Page/ICONOS WEB-01.png" alt="">
+          <h4 class="service-heading">ASESORAMIENTO</h4>
+          <p class="text-muted">Sabemos que nuestras bolsas son la cara de presentacion de tu producto, por eso te
+            brindamos atencion personalizada, hacemos las bolsas a medida y te ayudamos con el diseño.</p>
+        </div>
+        <div class="col-md-4">
+          <img class="servicio-img" src="../../../../../assets/Home Page/ICONOS WEB-02.png" alt="">
+
+          <h4 class="service-heading">ECOFRIENDLY</h4>
+          <p class="text-muted">Nos interesa el cuidado del medio ambientes, por eso nuestra linea de produccion no
+            genera residuos y nuestras bolsas son reutilizables y reciclables.</p>
+        </div>
+        <div class="col-md-4">
+          <img class="servicio-img" src="../../../../../assets/Home Page/ICONOS WEB-03.png" alt="">
+          <h4 class="service-heading">PRECIO Y CALIDAD</h4>
+          <p class="text-muted">Destacamos por tener los precios mas competitivos del mercado, usar los mejores
+            materilaes y un constante control de calidad de los detalles.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <app-usr-tabla-empresas></app-usr-tabla-empresas>
+</div>

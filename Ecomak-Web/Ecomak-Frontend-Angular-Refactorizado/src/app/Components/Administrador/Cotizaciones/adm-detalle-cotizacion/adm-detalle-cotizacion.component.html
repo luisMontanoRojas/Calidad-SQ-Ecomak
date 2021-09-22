@@ -1,0 +1,65 @@
+<div mat-icon-button class="close-button" (click)="onClickCerrar()">
+    <mat-icon class="close-icon" color="warn">close</mat-icon>
+</div>
+
+<h3 mat-dialog-title>Detalle de Cotizacion</h3>
+
+<div mat-dialog-content>
+
+    <div class="row">
+        <div class="col">
+
+            <mat-dialog-actions align="center">
+                <strong>Informacion del Subscriptor</strong>
+            </mat-dialog-actions>
+
+            <br>
+            <b>Logo:   </b>
+            <br>
+            <img [src]="createImgPath(quote.imagePath)" alt="profile picture" style="width:360px; height:290px;">
+            <br>
+            <b>Nombre:   </b> {{quote.nameSub}}
+            <br>
+            <b>Correo:   </b> {{quote.emailSub}}
+            <br>
+            <b>Telefono:   </b> {{quote.phonoSub}}
+            <br>
+            <b>Empresa:   </b> {{quote.enterpriseSub}}
+            <br>
+            <b>Mensaje:   </b> {{quote.messageSub}}
+            <br>
+            <b>Color:   </b> {{quote.quoteColor}}
+            <br>
+            <b>Cantidad requerida:   </b> {{quote.quantity}}
+            <br>
+        </div>
+        <div class="col">
+            <mat-dialog-actions align="center">
+                <strong>Informacion del Producto</strong>
+            </mat-dialog-actions>
+            <br>
+            <b>Imagen:   </b>
+            <br>
+            <img [src]="createImgPath(productToQuote.photo)" alt="profile picture" style="width:360px; height:290px;">
+            <br>
+            <b>Nombre:   </b> {{productToQuote.name}}
+            <br>
+            <b>Precio:   </b> {{productToQuote.price}}
+            <br>
+            <b>Cantidad:   </b> {{productToQuote.quantity}}
+            <br>
+        </div>
+    </div>
+
+</div>
+
+
+<mat-dialog-actions align="center">
+
+    <button mat-raised-button color="primary" id="btnadd" (click)="onClickCerrar()">
+        <span class="material-icons">
+            clear
+        </span>
+         Cerrar </button>
+
+</mat-dialog-actions>

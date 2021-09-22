@@ -1,0 +1,32 @@
+<div class="justify-center edit-Form">
+    <div mat-icon-button class="close-button" (click)="onCancelar()">
+        <mat-icon class="close-icon" color="warn">close</mat-icon>  
+    </div>
+    <h2 mat-dialog-title>Detalle Trabajo Realizado
+    </h2>
+    <div mat-dialog-content>
+        <a href="#"><img mat-card-image src="{{api}}{{productTr.photoTr}}" alt="product"></a>
+        <dt>Tipo:</dt>
+            <dd>{{productTr.typeTr}}</dd>
+            <dt>Tela:</dt>
+            <dd>{{productTr.fabricTr}}</dd>
+            <dt>Diseño:</dt>
+            <dd>{{productTr.designTr}}</dd>
+            <dt>Cantidad:</dt>
+            <dd>{{productTr.quantityTr}}</dd>
+            <dt>Tamaño:</dt>
+            <dd>{{productTr.sizeTr}}</dd>
+            <dt>Asa:</dt>
+            <dd>{{productTr.handleTr}}</dd>
+    </div>
+    <mat-dialog-actions align="end">
+        <button mat-raised-button color="accent" (click)="onEditForm(productTr)">
+            <mat-icon>edit</mat-icon>
+        </button>
+        <button mat-raised-button color="warn" (click)="openDialog()">
+            <mat-icon>delete</mat-icon>
+        </button>
+        <button mat-raised-button color="primary" id="btnadd" (click)="onClickCerrar()"> Cerrar </button>
+    </mat-dialog-actions>
+</div>
+

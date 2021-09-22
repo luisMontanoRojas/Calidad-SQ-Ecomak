@@ -1,0 +1,39 @@
+<div class="container">
+    <div class="jumbotron ">
+        <div class="col-lg-12">
+            <button routerLink="/admin/promociones" mat-raised-button color="primary" id="btnadd">
+                <mat-icon>keyboard_backspace</mat-icon> Atras
+            </button>
+        </div>
+        <h1 class="titulo">Detalle Promocion</h1>
+        <div class="container">
+            <div class="text-center">
+                <h1>{{promo.tittle}}</h1>
+            </div>
+
+            <div class="row justify-content-center align-items-center" style="padding: 10px;">
+                <div class="col-md-6 col-xs-12 text-center">
+                    <img src="{{api}}{{promo.image}}" alt="promotion" class="circles img-fluid">
+                </div>
+                <div class="col-md-6 text-left">
+                    <div class="lib-row lib-header  ">
+                        <p><b>Desde: </b> {{valueIni}}</p>
+                        <p><b>Hasta: </b> {{valueEnd}}</p>
+
+
+                    </div>
+                    <div class="lib-row lib-desc">
+                        <p ALIGN="justify"><b>Descripción: </b>{{promo.description}}</p>
+                    </div>
+                </div>
+                <button mat-raised-button color="accent" (click)="onEditForm(promo)">
+                    <mat-icon>edit</mat-icon> Editar
+                </button>
+                <button mat-raised-button color="warn" (click)="openDialog()">
+                    <mat-icon>delete</mat-icon> Eliminar
+                </button>
+            </div>
+            <app-adm-list-comment></app-adm-list-comment>
+        </div>
+    </div>
+</div>

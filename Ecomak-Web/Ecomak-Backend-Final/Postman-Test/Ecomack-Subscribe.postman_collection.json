@@ -1,0 +1,210 @@
+{
+	"info": {
+		"_postman_id": "08163dc2-3de4-4863-9b9c-778fa229bac7",
+		"name": "Ecomack-Subscribe",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetSubscribes",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"Name\": \"fidel\",\n    \"Password\":\"Fidel@1\",\n}",
+					"options": {
+						"raw": {
+							"language": "javascript"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:50455/a/api/subscribes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "50455",
+					"path": [
+						"a",
+						"api",
+						"subscribes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetSubscribe",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"Name\": \"fidel\",\n    \"Password\":\"Fidel@1\",\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:50455/a/api/subscribes/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "50455",
+					"path": [
+						"a",
+						"api",
+						"subscribes",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PutSubscribes",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n        \"Name\": \"dddd\",\r\n        \"Company\": \"Ewdwq\",\r\n        \"Email\":\"juan@gmail.com\",\r\n        \"Phone\": 44444444,\r\n        \"Message\": \"sssssss\",\r\n        \"Id\": 2\r\n    },",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:50455/a/api/subscribes/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "50455",
+					"path": [
+						"a",
+						"api",
+						"subscribes",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteSubscribe",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJOYW1lIjoiZmlkZWwiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjhjNDlhZWI4LWVjNTItNGM5Mi05ZTAxLTM0MzI2NmE1MTc3NyIsImV4cCI6MTU4Nzk1NDE4NiwiaXNzIjoiaHR0cDovL0Vjb21hay5uZXQiLCJhdWQiOiJodHRwOi8vRWNvbWFrLm5ldCJ9.P2NR5RQQf36XKdXwtLO7kWQ3N3RASfNwsNunWyk33P0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:50455/a/api/subscribes/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "50455",
+					"path": [
+						"a",
+						"api",
+						"subscribes",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PostSubscribe",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJOYW1lIjoiZmlkZWwiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6ImIwOWFhYzA4LTY2NjQtNGQ5NS1hZTk2LWU1Y2Y2YWU0MDQ0MCIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IkFkbWluIiwiZXhwIjoxNTg3OTI2ODQ3LCJpc3MiOiJodHRwOi8vRWNvbWFrLm5ldCIsImF1ZCI6Imh0dHA6Ly9FY29tYWsubmV0In0.0B-96fo4MS4KhRDYQXWhf5YiXC4B4VtwongLQX72Y60",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n        \"Name\":\"holaeddas\",\r\n        \"Company\": \"ecedweddewdwwewdo\",\r\n        \"Email\": \"dasd@hotmail.com\",\r\n        \"Phone\": 4444488,\r\n        \"Message\": \"hola\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:50455/a/api/subscribes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "50455",
+					"path": [
+						"a",
+						"api",
+						"subscribes"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

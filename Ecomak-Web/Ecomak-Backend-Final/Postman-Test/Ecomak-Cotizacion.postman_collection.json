@@ -1,0 +1,83 @@
+{
+	"info": {
+		"_postman_id": "a6774198-8c56-47c5-8403-93a286ee1f85",
+		"name": "Ecomak-Cotizacion",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET ALL",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:50455/a/api/quotes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "50455",
+					"path": [
+						"a",
+						"api",
+						"quotes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET ONE",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:50455/a/api/quotes/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "50455",
+					"path": [
+						"a",
+						"api",
+						"quotes",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"quoteColor\": \"NEGRO\",\n\t\"quantity\": 1,\n\t\"nameSub\": \"Negro\",\n\t\"emailSub\": \"NR\",\n\t\"phonoSub\": \"1111\",\n\t\"enterpriseSub\": \"NEGRO\",\n\t\"messageSub\": \"NEGRO\",\n    \"productId\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:50455/a/api/quotes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "50455",
+					"path": [
+						"a",
+						"api",
+						"quotes"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

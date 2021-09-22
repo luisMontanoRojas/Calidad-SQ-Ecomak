@@ -1,0 +1,17 @@
+<div class="row">
+    <div class="box" *ngFor="let product of products">
+        <div id="princ">
+            <div class="imgBx" id="imgbx">
+                <img id="img"src="{{api}}{{product.photo}}" alt="product">
+            </div>
+            <div class="details" id="detalles">
+                <button  mat-raised-button color="primary" (click)="onDetail(product)">
+                    <span class="material-icons">
+                        remove_red_eye
+                    </span>
+                    Detalle
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

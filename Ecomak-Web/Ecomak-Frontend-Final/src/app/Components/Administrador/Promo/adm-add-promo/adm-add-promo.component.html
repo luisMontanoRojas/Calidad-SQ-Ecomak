@@ -1,0 +1,57 @@
+<div class="justify-center edit-Form">
+
+    <div mat-icon-button class="close-button" (click)="onCancelar()">
+        <mat-icon class="close-icon" color="warn">close</mat-icon>
+    </div>
+
+    <h2 mat-dialog-title>Añadir Promocion</h2>
+
+    <div mat-dialog-content>
+        <form [formGroup]="form" (ngSubmit)="onSubmit()">
+
+            <mat-form-field class="edit-full-width">
+                <input matInput placeholder="Tipo del producto"  type="text" formControlName="promTitle" required>
+                <mat-error>
+                    Por favor ingrese el nombre 
+                </mat-error>
+            </mat-form-field>
+            <mat-form-field class="edit-full-width">
+                <textarea matInput placeholder="Descripcion"  formControlName="promDescription" required></textarea>
+                <mat-error>
+                    Por favor ingrese la descripcion
+                </mat-error>
+            </mat-form-field>
+            <mat-form-field appearance="fill" class="edit-full-width">
+                <mat-label>Fecha Inicio(dd/mm/yyyy)</mat-label>
+                <input matInput [matDatepicker]="picker" [(ngModel)]="iniDate" formControlName="prominiDate" required>
+                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker startView="month" ></mat-datepicker>
+            </mat-form-field>
+            <mat-form-field appearance="fill" class="edit-full-width">
+                <mat-label>Fecha Fin(dd/mm/yyyy)</mat-label>
+                <input matInput [matDatepicker]="picker1" [(ngModel)]="endDate" formControlName="promendDate" required>
+                <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+                <mat-datepicker #picker1></mat-datepicker>
+            </mat-form-field>
+        </form>
+     
+        <dl>
+            <label style="color: #646464;">Foto</label>
+             <app-adm-subir-imagen [TypeImage]="'Promotions'" (onUploadFinished)="uploadFinished($event)"></app-adm-subir-imagen> 
+        </dl>
+
+    </div>
+
+    <mat-dialog-actions align="end">
+        <button mat-raised-button color="warn" (click)="onCancelar()">
+            <span class="material-icons">
+                clear
+            </span>
+            Cancelar</button>
+        <button mat-raised-button type="submit" (click)="onSubmit()">
+            <span class="material-icons">
+                done
+            </span>
+            Aceptar</button>
+    </mat-dialog-actions>
+</div>

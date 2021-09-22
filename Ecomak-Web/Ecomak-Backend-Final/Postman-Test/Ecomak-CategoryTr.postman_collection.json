@@ -1,0 +1,159 @@
+{
+	"info": {
+		"_postman_id": "0fdc2572-453a-496f-8863-edd4ceeaa446",
+		"name": "Ecomak-CategoryTr",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET ALL",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:50455/a/api/categories",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "50455",
+					"path": [
+						"a",
+						"api",
+						"categories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET ONE",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:50455/a/api/categories/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "50455",
+					"path": [
+						"a",
+						"api",
+						"categories",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Cumpleaños\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:50455/a/api/categories",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "50455",
+					"path": [
+						"a",
+						"api",
+						"categories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\":3,\n\t\"name\": \"Eventos\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:50455/a/api/categories/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "50455",
+					"path": [
+						"a",
+						"api",
+						"categories",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:50455/a/api/categories/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "50455",
+					"path": [
+						"a",
+						"api",
+						"categories",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET CANT-PRODUCTS-TR",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:50455/a/api/categoriesTr/1/cantProductsTr",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "50455",
+					"path": [
+						"a",
+						"api",
+						"categoriesTr",
+						"1",
+						"cantProductsTr"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

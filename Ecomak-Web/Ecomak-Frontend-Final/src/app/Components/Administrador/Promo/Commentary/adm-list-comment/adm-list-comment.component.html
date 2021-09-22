@@ -1,0 +1,45 @@
+<section class="page-section" id="productos">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h3>Comentarios de Usuarios</h3>
+                <button mat-raised-button color="primary" id="btnadd" (click)="openDialogAdd()">
+                    <mat-icon>playlist_add</mat-icon> Añadir Comentario
+                </button>
+                <div class="row-12" style="margin-bottom: 10px;">
+                    <div *ngFor="let comment of commentaries">
+                        <div class="row-12 bootstrap snippets">
+                            <div class="col-md-12 col-md-offset-12 col-sm-12">
+                                <div class="comment-wrapper">
+                                    <div class="panel panel-info">
+                                        <hr>
+                                        <ul>
+                                            <li class="media">
+                                                <a href="#" class="pull-left">
+                                                    <img src="../../../../../../assets/Comments/user_1.jpg" alt="" class="img-circle">
+                                                </a>
+                                                <div class="media-body" style="margin: 10px;">
+                                                    <span class="text-muted pull-right">
+                                                                        <small class="text-muted">{{ comment.time | date:'dd MMM yyyy' | lowercase}}</small>
+                                                                    </span>
+                                                    <strong class="text-success"><b>{{ comment.author }}</b>  </strong>
+                                                    <p>
+                                                        {{ comment.comment }}
+                                                    </p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <button mat-raised-button color="warn" (click)="openDialog(comment)">Borrar</button>
+                                        <button mat-raised-button color="primary" (click)="onEsconder(comment)" *ngIf="comment.show == false">Mostrar</button>
+                                        <button mat-raised-button color="accent" (click)="onEsconder(comment)" *ngIf="comment.show">Esconder</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

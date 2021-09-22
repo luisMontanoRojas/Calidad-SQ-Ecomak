@@ -1,0 +1,36 @@
+<div class="row h-100">
+  <div class="col-sm-12 my-auto">
+
+    <mat-card>
+      <mat-card-content>
+
+        <h2>Iniciar Sesión</h2>
+        <form [formGroup]="form" (ngSubmit)="onSubmit()">
+
+          <mat-form-field class="full-width-input">
+            <input matInput placeholder="Usuario" formControlName="username" required>
+            <mat-error>
+              Por favor ingrese un usiario válido
+            </mat-error>
+          </mat-form-field>
+          <mat-form-field class="full-width-input">
+            <input matInput type="password" placeholder="Password" formControlName="password" required>
+            <mat-error>
+              Por favor proporcione una contraseña válida
+            </mat-error>
+          </mat-form-field>
+          <mat-error *ngIf="loginInvalid">
+
+            Hubo un problema al iniciar sesión({{error}})
+          </mat-error>
+          <div class="row justify-content-center">
+            <button *ngIf="!loading" mat-raised-button color="primary">Entrar </button>
+            <mat-spinner *ngIf="loading" [diameter]="40"></mat-spinner>
+          </div>
+
+        </form>
+      </mat-card-content>
+    </mat-card>
+
+  </div>
+</div>

@@ -1,0 +1,82 @@
+<header class="masthead">
+    <div class="container">
+        <div class="intro-text">
+            <h1>Producto</h1>
+        </div>
+    </div>
+</header>
+
+<div class="col-lg-12">
+    <button routerLink="/productos" href="#Productos" mat-raised-button color="primary"><span class="material-icons">
+            keyboard_backspace
+        </span>Atras</button>
+</div>
+
+<div class="container">
+
+    <div class="card">
+        <div class="row ">
+            <aside class="col-sm-5">
+
+                <article class="gallery-wrap">
+
+                    <mat-card class="example-card">
+                        <mat-card-header>
+                            <mat-card-title>{{product.name}}</mat-card-title>
+                            <mat-card-subtitle> Ecomak</mat-card-subtitle>
+                        </mat-card-header>
+                        <img mat-card-image [src]="createImgPath(product.photo)" class="mainImage ">
+
+                        <mat-card-actions>
+                           <app-productos-colores >
+
+                           </app-productos-colores>
+
+                        </mat-card-actions>
+                    </mat-card>
+                </article>
+                <!-- gallery-wrap .end// -->
+            </aside>
+            <aside class="col-sm-7">
+                <article class="card-body p-5">
+
+                    <dl class="param param-feature">
+                        <dt class="text-uppercase">Tipo Bolsa:</dt>
+                        <dd>{{product.name}}</dd>
+                    </dl>
+
+                    <!-- price-detail-wrap .// -->
+                    <dl class="param param-feature">
+                        <dt class="text-uppercase">Tela</dt>
+                        <dd>Friselina de 75 gr 20 colores</dd>
+                    </dl>
+                    <dl class="param param-feature">
+                        <dt class="text-uppercase">Precio</dt>
+                        <dd>{{product.price}}</dd>
+                    </dl>
+                    <dl class="param param-feature">
+                        <dt class="text-uppercase">Cantidad minima:</dt>
+                        <dd>{{product.quantity}}</dd>
+                    </dl>
+                    <!-- item-property-hor .// -->
+                    <dl class="param param-feature">
+                        <dt class="text-uppercase">Entregas : Todo Bolivia </dt>
+
+                    </dl>
+                    <!-- item-property-hor .// -->
+
+                    <hr>
+
+                    <hr>
+                    <!-- <app-usr-pasos-cotizaciones [product]="product"></app-usr-pasos-cotizaciones> -->
+                    <button class="btn  btn-primary text-uppercase" (click)="openDialogPasos()">Cotizar </button>
+                </article>
+                <!-- card-body.// -->
+            </aside>
+            <!-- col.// -->
+        </div>
+        <!-- row.// -->
+    </div>
+</div>
+<!-- card.// -->
+<!--</section>-->

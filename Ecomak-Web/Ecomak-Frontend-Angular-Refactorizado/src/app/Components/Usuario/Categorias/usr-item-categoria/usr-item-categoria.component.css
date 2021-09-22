@@ -1,0 +1,19 @@
+.del {
+    background: #00ff73;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 5px 9px;
+    border-radius: 50%;
+    cursor: pointer;
+    float: left;
+}
+
+.post {
+    background: #d0f5ae;
+    padding: 10px;
+    border-bottom: 1px #ccc dotted;
+    margin: 1%;
+}
+.categoria{
+    margin-bottom: 40px;
+}

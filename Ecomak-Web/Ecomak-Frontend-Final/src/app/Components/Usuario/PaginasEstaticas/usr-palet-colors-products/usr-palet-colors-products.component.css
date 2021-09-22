@@ -1,0 +1,16 @@
+.colorSelect {
+    width: 30px;
+    height: 30px;
+    margin: 3px;
+    margin-top: 10px;
+    padding: 0px;
+    border-radius: 50%;
+}
+
+.margin {
+    margin: 7px;
+}
+
+.image {
+    height: 300px;
+}

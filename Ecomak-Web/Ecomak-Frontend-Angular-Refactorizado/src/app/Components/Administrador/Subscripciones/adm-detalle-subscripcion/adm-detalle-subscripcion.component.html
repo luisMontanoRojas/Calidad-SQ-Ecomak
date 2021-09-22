@@ -1,0 +1,35 @@
+<mat-card-header>
+    <mat-card-title>Detalle Subscriptor</mat-card-title>
+</mat-card-header>
+<mat-card-content>
+    <dl class="param param-feature">
+        <dt>Nombre:</dt>
+        <dd>{{subs.name}}</dd>
+    </dl>
+    <dl class="param param-feature">
+        <dt>Empresa:</dt>
+        <dd>{{subs.company}}</dd>
+    </dl>
+    <dl class="param param-feature">
+        <dt>Correo Electronico:</dt>
+        <dd>{{subs.email}}</dd>
+    </dl>
+    <dl class="param param-feature">
+        <dt>Telefono/Celular</dt>
+        <dd>{{subs.phone}}</dd>
+    </dl>
+    <dl class="param param-feature">
+        <dt>Mensaje</dt>
+        <dd>{{subs.message}}</dd>
+    </dl>
+</mat-card-content>
+<mat-card-actions>
+    <button mat-raised-button color="accent" (click)="onEditForm(subs)">
+        <mat-icon>edit</mat-icon>
+    </button>
+    <button mat-raised-button color="warn" (click)="openDialog()">
+        <mat-icon>delete</mat-icon>
+    </button>
+    <button mat-raised-button color="primary" id="btnadd" (click)="onClickCerrar()"> Cerrar </button>
+</mat-card-actions>
+

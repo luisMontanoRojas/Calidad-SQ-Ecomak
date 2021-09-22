@@ -1,0 +1,54 @@
+<div class="justify-center edit-Form" id="ModalEdit">
+    <div mat-icon-button class="close-button" (click)="onCancelar()">
+        <mat-icon class="close-icon" color="warn">close</mat-icon>
+    </div>
+    <h2 mat-dialog-title>Editar Subscripcion</h2>
+    <div mat-dialog-content>
+        <form [formGroup]="form" (ngSubmit)="onSubmitEdit()">
+
+            <mat-form-field class="edit-full-width">
+                <input matInput placeholder="Nombre" type="text"[(ngModel)]="subscribeEdit.name" formControlName="subsName" required>
+                <mat-error>
+                    Por favor ingrese el nombre
+                </mat-error>
+            </mat-form-field>
+            <mat-form-field class="edit-full-width">
+                <input matInput placeholder="Correo electronico" type="email" [(ngModel)]="subscribeEdit.email" formControlName="subsEmail" required>
+                <mat-error>
+                    Por favor ingrese el correo
+                </mat-error>
+            </mat-form-field>
+            <mat-form-field class="edit-full-width">
+                <input matInput placeholder="Telefono" type="number" [(ngModel)]="subscribeEdit.phone" formControlName="subsPhone" required>
+                <mat-error>
+                    Por favor ingrese el telefono
+                </mat-error>
+            </mat-form-field>
+            <mat-form-field class="edit-full-width">
+                <input matInput placeholder="Compañia" [(ngModel)]="subscribeEdit.company" type="text" formControlName="company"   >
+                <mat-error>
+                    Por favor ingrese la compania
+                </mat-error>
+            </mat-form-field>
+            <mat-form-field class="edit-full-width">
+                <textarea  matInput placeholder="Mensaje" type="text"  [(ngModel)]="subscribeEdit.message" formControlName="subsMessage" required></textarea>
+                <mat-error>
+                    Por favor ingrese el mensaje 
+                </mat-error>
+            </mat-form-field>
+        </form>
+        
+    </div>
+    <mat-dialog-actions align="end">
+        <button mat-raised-button color="warn" (click)="onCancelar()">
+            <span class="material-icons">
+                clear
+            </span>
+            Cancelar</button>
+        <button mat-raised-button type="submit" (click)="onSubmitEdit()">
+            <span class="material-icons">
+                done
+            </span>
+            Aceptar</button>
+    </mat-dialog-actions>
+</div>

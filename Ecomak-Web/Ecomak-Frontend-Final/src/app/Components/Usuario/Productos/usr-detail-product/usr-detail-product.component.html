@@ -1,0 +1,84 @@
+<header class="masthead">
+    <div class="container">
+        <div class="intro-text">
+            <div class="intro-heading text-uppercase">Producto</div>
+        </div>
+    </div>
+</header>
+
+<div class="col-lg-12">
+    <button routerLink="/productos" href="#Productos" mat-raised-button color="primary"><span class="material-icons">
+            keyboard_backspace
+        </span>Atras</button>
+</div>
+
+<div class="container">
+
+    <div class="card">
+        <div class="row ">
+            <aside class="col-sm-5">
+
+                <article class="gallery-wrap">
+
+                    <mat-card class="example-card">
+                        <mat-card-header>
+                            <mat-card-title>{{product.type}}</mat-card-title>
+                            <mat-card-subtitle> Ecomak</mat-card-subtitle>
+                        </mat-card-header>
+                        <img mat-card-image src='{{api }}{{product.photo}}' class="mainImage ">
+
+                        <mat-card-actions>
+                            <app-usr-palet-colors-products></app-usr-palet-colors-products>
+                        </mat-card-actions>
+                    </mat-card>
+                </article>
+                <!-- gallery-wrap .end// -->
+            </aside>
+            <aside class="col-sm-7">
+                <article class="card-body p-5">
+
+                    <dl class="param param-feature">
+                        <dt class="text-uppercase">Tipo</dt>
+                        <dd>{{product.type}}</dd>
+                    </dl>
+
+                    <!-- price-detail-wrap .// -->
+                    <dl class="param param-feature">
+                        <dt class="text-uppercase">Tela</dt>
+                        <dd>{{product.fabric}}</dd>
+                    </dl>
+                    <dl class="param param-feature">
+                        <dt class="text-uppercase">Diseño</dt>
+                        <dd>{{product.design}}</dd>
+                    </dl>
+                    <dl class="param param-feature">
+                        <dt class="text-uppercase">Cantidad</dt>
+                        <dd>{{product.quantity}}</dd>
+                    </dl>
+                    <dl class="param param-feature">
+                        <dt class="text-uppercase">Tamaño</dt>
+                        <dd>{{product.size}}</dd>
+                    </dl>
+                    <div *ngIf="product.handle!=null">
+                        <dl class="param param-feature">
+                            <dt class="text-uppercase">Asa</dt>
+                            <dd>{{product.handle}}</dd>
+                        </dl>
+                    </div>
+
+                    <dl class="param param-feature">
+                        <dt class="text-uppercase">Entregas : Todo Bolivia </dt>
+                    </dl>
+                    <hr>
+                    <hr>
+                    <button mat-raised-button color="primary" (click)="openDialogPasos()">Cotizar </button>
+                </article>
+                <!-- card-body.// -->
+            </aside>
+            <!-- col.// -->
+        </div>
+        <!-- row.// -->
+    </div>
+</div>
+<!-- card.// -->
+<!--</section>-->

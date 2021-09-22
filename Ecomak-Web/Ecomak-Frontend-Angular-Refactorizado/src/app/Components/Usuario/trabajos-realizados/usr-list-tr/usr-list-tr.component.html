@@ -1,0 +1,29 @@
+<header class="masthead">
+    <div class="container">
+        <div class="intro-text">
+            <div class="intro-heading text-uppercase">Trabajos realizados!</div>
+            <div class="intro-lead-in">Una vista a los trabajos realizados </div>
+        </div>
+    </div>
+</header>
+
+<div class="container">
+    <section class="page-section" id="productos">
+        <div class="row">
+            <div class="container filtro">
+                <div class="btn active" id="btn-todos" (click)="filter(null)">Todos</div>
+                <div *ngFor="let category of categorys">
+                    <div class="btn" id="btn-{{category.id}}" (click)="filter(category)">
+                        {{category.name}}
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="card-columns">
+                    <app-usr-item-tr *ngFor="let category of categorysFiltered" [category]="category"></app-usr-item-tr>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

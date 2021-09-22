@@ -1,0 +1,79 @@
+{
+	"info": {
+		"_postman_id": "763d6749-4ad8-42b0-a995-10655382ffd4",
+		"name": "Ecomak-Authentication",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CreateUsers",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"Name\": \"Juan\",\r\n    \t\"Password\":\"Hola!12\",\r\n    \t\"ConfirmPassword\":\"Hola!12\"\r\n    },",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:50455/a/api/Authentication/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "50455",
+					"path": [
+						"a",
+						"api",
+						"Authentication",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"Name\": \"fidel\",\n    \"Password\":\"Fidel@1\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:50455/a/api/Authentication/Login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "50455",
+					"path": [
+						"a",
+						"api",
+						"Authentication",
+						"Login"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
