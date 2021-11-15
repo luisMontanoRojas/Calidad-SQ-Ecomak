@@ -16,44 +16,30 @@ namespace EcomakTest
 {
     public class CommentsTest
     {
-        [Fact]
-        public async Task GetCategory_ShouldReturnFirstCategory()
-        {
-            var commentsService = GetCommentsService();
-            //act 
-
-            var com = await commentsService.GetCommentaryAsync(1, 1);
-            IEnumerable<Product> p = new List<Product>();
-            IEnumerable<Tr> t = new List<Tr>();
-
-            //result
-
-            Assert.IsType<Commentary>(com);
-            Assert.Equal(1, com.id);
-            Assert.Equal("Esteban", com.author);
-            Assert.Equal("Nice Job", com.comment);
-            Assert.Equal(DateTime.Today, com.time);
-        }
+        
         [Fact]
         public async Task GetCategories_ShouldreturnAllCategories()
         {
+            //Arrange
             var commentsService = GetCommentsService();
-            //act 
+            //Act 
             var com = await commentsService.GetComments(1);
 
+            //Assert
             Assert.IsAssignableFrom<IEnumerable<Commentary>>(com);
         }
         [Fact]
         public async Task GetCategory_ShouldreturnAnException()
         {
+            //Arrange
             var commentsService = GetCommentsService();
-            //act 
+            //Act 
             var cat = commentsService.GetCommentaryAsync(19, 19);
-
+            //Assert
             await Assert.ThrowsAsync<NotFoundItemException>(() => cat);
         }
         
-        private CommentsService GetCommentsService()
+        private CommentsService GetCommentsService(bool ccommetSaved = true)
         {
             var MoqlibraryRespository = new Mock<IEcomakRepository>();
             var testComments = new List<CommentaryEntity>();
@@ -65,9 +51,14 @@ namespace EcomakTest
             foreach (CommentaryEntity com in testCommentsIE)
             {
                 int  id = com.id ?? default(int);
+                MoqlibraryRespository.Setup(m => m.UpdateCommentary(com));
+                MoqlibraryRespository.Setup(m => m.CreateCommentary(com));
                 MoqlibraryRespository.Setup(m => m.GetCommentaryAsync(id, false)).Returns(Task.FromResult(com));
+                MoqlibraryRespository.Setup(m => m.DeleteCommentaryAsync(id));
+                MoqlibraryRespository.Setup(m => m.DetachEntity(com));
             }
 
+            MoqlibraryRespository.Setup(m => m.SaveChangesAsync()).Returns(Task.FromResult(ccommetSaved));
 
             EcomakProfile myProfile = new EcomakProfile();
             MapperConfiguration configuration = new MapperConfiguration(cfg => cfg.AddProfile(myProfile));

@@ -21,3 +21,26 @@ C:\Users\MARCO\Documents\Marco\Cato\10to semestre\Gestion de Calidad de Sistemas
 C:\Users\MARCO\Documents\Marco\Cato\10to semestre\Gestion de Calidad de Sistemas\Nueva carpeta\Calidad-SQ-Ecomak\Ecomak-Web\Ecomak-Backend-Final\EcomakTest\obj\Debug\netcoreapp2.2\EcomakTest.dll
 C:\Users\MARCO\Documents\Marco\Cato\10to semestre\Gestion de Calidad de Sistemas\Nueva carpeta\Calidad-SQ-Ecomak\Ecomak-Web\Ecomak-Backend-Final\EcomakTest\obj\Debug\netcoreapp2.2\EcomakTest.pdb
 C:\Users\MARCO\Documents\Marco\Cato\10to semestre\Gestion de Calidad de Sistemas\Nueva carpeta\Calidad-SQ-Ecomak\Ecomak-Web\Ecomak-Backend-Final\EcomakTest\obj\Debug\netcoreapp2.2\EcomakTest.genruntimeconfig.cache
+F:\UCB\Calidad\practica3\Calidad-SQ-Ecomak\Ecomak-Web\Ecomak-Backend-Final\EcomakTest\bin\Debug\netcoreapp2.2\appsettings.Development.json
+F:\UCB\Calidad\practica3\Calidad-SQ-Ecomak\Ecomak-Web\Ecomak-Backend-Final\EcomakTest\bin\Debug\netcoreapp2.2\appsettings.json
+F:\UCB\Calidad\practica3\Calidad-SQ-Ecomak\Ecomak-Web\Ecomak-Backend-Final\EcomakTest\bin\Debug\netcoreapp2.2\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+F:\UCB\Calidad\practica3\Calidad-SQ-Ecomak\Ecomak-Web\Ecomak-Backend-Final\EcomakTest\bin\Debug\netcoreapp2.2\xunit.runner.reporters.netcoreapp10.dll
+F:\UCB\Calidad\practica3\Calidad-SQ-Ecomak\Ecomak-Web\Ecomak-Backend-Final\EcomakTest\bin\Debug\netcoreapp2.2\xunit.runner.utility.netcoreapp10.dll
+F:\UCB\Calidad\practica3\Calidad-SQ-Ecomak\Ecomak-Web\Ecomak-Backend-Final\EcomakTest\bin\Debug\netcoreapp2.2\Ecomak.deps.json
+F:\UCB\Calidad\practica3\Calidad-SQ-Ecomak\Ecomak-Web\Ecomak-Backend-Final\EcomakTest\bin\Debug\netcoreapp2.2\Ecomak.runtimeconfig.json
+F:\UCB\Calidad\practica3\Calidad-SQ-Ecomak\Ecomak-Web\Ecomak-Backend-Final\EcomakTest\bin\Debug\netcoreapp2.2\Ecomak.runtimeconfig.dev.json
+F:\UCB\Calidad\practica3\Calidad-SQ-Ecomak\Ecomak-Web\Ecomak-Backend-Final\EcomakTest\bin\Debug\netcoreapp2.2\EcomakTest.deps.json
+F:\UCB\Calidad\practica3\Calidad-SQ-Ecomak\Ecomak-Web\Ecomak-Backend-Final\EcomakTest\bin\Debug\netcoreapp2.2\EcomakTest.runtimeconfig.json
+F:\UCB\Calidad\practica3\Calidad-SQ-Ecomak\Ecomak-Web\Ecomak-Backend-Final\EcomakTest\bin\Debug\netcoreapp2.2\EcomakTest.runtimeconfig.dev.json
+F:\UCB\Calidad\practica3\Calidad-SQ-Ecomak\Ecomak-Web\Ecomak-Backend-Final\EcomakTest\bin\Debug\netcoreapp2.2\EcomakTest.dll
+F:\UCB\Calidad\practica3\Calidad-SQ-Ecomak\Ecomak-Web\Ecomak-Backend-Final\EcomakTest\bin\Debug\netcoreapp2.2\EcomakTest.pdb
+F:\UCB\Calidad\practica3\Calidad-SQ-Ecomak\Ecomak-Web\Ecomak-Backend-Final\EcomakTest\bin\Debug\netcoreapp2.2\Ecomak.dll
+F:\UCB\Calidad\practica3\Calidad-SQ-Ecomak\Ecomak-Web\Ecomak-Backend-Final\EcomakTest\bin\Debug\netcoreapp2.2\Ecomak.pdb
+F:\UCB\Calidad\practica3\Calidad-SQ-Ecomak\Ecomak-Web\Ecomak-Backend-Final\EcomakTest\obj\Debug\netcoreapp2.2\EcomakTest.csproj.AssemblyReference.cache
+F:\UCB\Calidad\practica3\Calidad-SQ-Ecomak\Ecomak-Web\Ecomak-Backend-Final\EcomakTest\obj\Debug\netcoreapp2.2\EcomakTest.GeneratedMSBuildEditorConfig.editorconfig
+F:\UCB\Calidad\practica3\Calidad-SQ-Ecomak\Ecomak-Web\Ecomak-Backend-Final\EcomakTest\obj\Debug\netcoreapp2.2\EcomakTest.AssemblyInfoInputs.cache
+F:\UCB\Calidad\practica3\Calidad-SQ-Ecomak\Ecomak-Web\Ecomak-Backend-Final\EcomakTest\obj\Debug\netcoreapp2.2\EcomakTest.AssemblyInfo.cs
+F:\UCB\Calidad\practica3\Calidad-SQ-Ecomak\Ecomak-Web\Ecomak-Backend-Final\EcomakTest\obj\Debug\netcoreapp2.2\EcomakTest.csproj.CoreCompileInputs.cache
+F:\UCB\Calidad\practica3\Calidad-SQ-Ecomak\Ecomak-Web\Ecomak-Backend-Final\EcomakTest\obj\Debug\netcoreapp2.2\EcomakTest.dll
+F:\UCB\Calidad\practica3\Calidad-SQ-Ecomak\Ecomak-Web\Ecomak-Backend-Final\EcomakTest\obj\Debug\netcoreapp2.2\EcomakTest.pdb
+F:\UCB\Calidad\practica3\Calidad-SQ-Ecomak\Ecomak-Web\Ecomak-Backend-Final\EcomakTest\obj\Debug\netcoreapp2.2\EcomakTest.genruntimeconfig.cache

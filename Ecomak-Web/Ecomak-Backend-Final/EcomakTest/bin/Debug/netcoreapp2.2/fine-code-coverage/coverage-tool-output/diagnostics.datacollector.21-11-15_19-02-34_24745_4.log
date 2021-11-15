@@ -1,0 +1,424 @@
+TpTrace Verbose: 0 : 13372, 1, 2021/11/15, 19:02:34.545, 287165044718, datacollector.dll, Version: 16.11.0-release-20210730-02
+TpTrace Information: 0 : 13372, 1, 2021/11/15, 19:02:34.553, 287165110866, datacollector.dll, DataCollectorMain.Run: Starting data collector run with args: --port,51937,--parentprocessid,2568,--diag,F:\UCB\Calidad\practica3\Calidad-SQ-Ecomak\Ecomak-Web\Ecomak-Backend-Final\EcomakTest\bin\Debug\netcoreapp2.2\fine-code-coverage\coverage-tool-output\diagnostics.datacollector.21-11-15_19-02-34_24745_4.log,--tracelevel,4
+TpTrace Information: 0 : 13372, 1, 2021/11/15, 19:02:34.553, 287165112990, datacollector.dll, DataCollector: Monitoring parent process with id: '2568'
+TpTrace Information: 0 : 13372, 1, 2021/11/15, 19:02:34.571, 287165289758, datacollector.dll, Trying to connect to server on socket : 127.0.0.1:51937 
+TpTrace Verbose: 0 : 13372, 1, 2021/11/15, 19:02:34.622, 287165794006, datacollector.dll, SocketCommunicationManager : SetupClientAsync : Attempting to connect to the server.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:34.641, 287165987658, datacollector.dll, Connected to the server successfully 
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:34.641, 287165989357, datacollector.dll, Using the buffer size of 16384 bytes
+TpTrace Information: 0 : 13372, 1, 2021/11/15, 19:02:34.809, 287167664808, datacollector.dll, DataCollector: Start Request Processing.
+TpTrace Information: 0 : 13372, 1, 2021/11/15, 19:02:34.815, 287167733217, datacollector.dll, DataCollectionRequestHandler.ProcessRequests : Datacollector received message: (DataCollection.BeforeTestRunStart) -> {
+  "SettingsXml": "<RunSettings><RunConfiguration><ResultsDirectory>F:\\UCB\\Calidad\\practica3\\Calidad-SQ-Ecomak\\Ecomak-Web\\Ecomak-Backend-Final\\EcomakTest\\bin\\Debug\\netcoreapp2.2\\fine-code-coverage\\coverage-tool-output</ResultsDirectory><TargetPlatform>X64</TargetPlatform><TargetFrameworkVersion>.NETCoreApp,Version=v2.2</TargetFrameworkVersion><DesignMode>False</DesignMode><CollectSourceInformation>False</CollectSourceInformation><TestAdaptersPaths>C:\\Program Files\\dotnet\\sdk\\5.0.401\\Extensions</TestAdaptersPaths></RunConfiguration><LoggerRunSettings><Loggers><Logger friendlyName=\"blame\" enabled=\"True\" /><Logger friendlyName=\"Console\" uri=\"logger://microsoft/TestPlatform/ConsoleLogger/v1\" assemblyQualifiedName=\"Microsoft.VisualStudio.TestPlatform.CommandLine.Internal.ConsoleLogger, vstest.console, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a\" codeBase=\"C:\\Program Files\\dotnet\\sdk\\5.0.401\\vstest.console.dll\" enabled=\"True\" /></Loggers></LoggerRunSettings><DataCollectionRunSettings><DataCollectors><DataCollector friendlyName=\"blame\" enabled=\"True\"><Configuration><ResultsDirectory>F:\\UCB\\Calidad\\practica3\\Calidad-SQ-Ecomak\\Ecomak-Web\\Ecomak-Backend-Final\\EcomakTest\\bin\\Debug\\netcoreapp2.2\\fine-code-coverage\\coverage-tool-output</ResultsDirectory></Configuration></DataCollector></DataCollectors></DataCollectionRunSettings></RunSettings>",
+  "Sources": [
+    "F:\\UCB\\Calidad\\practica3\\Calidad-SQ-Ecomak\\Ecomak-Web\\Ecomak-Backend-Final\\EcomakTest\\bin\\Debug\\netcoreapp2.2\\fine-code-coverage\\build-output\\EcomakTest.dll"
+  ],
+  "IsTelemetryOptedIn": false
+}
+TpTrace Verbose: 0 : 13372, 1, 2021/11/15, 19:02:34.907, 287168646969, datacollector.dll, TestPluginCache: Update extensions started. Skip filter = False
+TpTrace Verbose: 0 : 13372, 1, 2021/11/15, 19:02:34.908, 287168658612, datacollector.dll, TestPluginCache: Using directories for assembly resolution 'C:\Program Files\dotnet\sdk\5.0.401\Extensions'.
+TpTrace Verbose: 0 : 13372, 1, 2021/11/15, 19:02:34.908, 287168660141, datacollector.dll, TestPluginCache: Updated the available extensions to 'C:\Program Files\dotnet\sdk\5.0.401\Extensions\Microsoft.TestPlatform.Extensions.BlameDataCollector.dll,C:\Program Files\dotnet\sdk\5.0.401\Extensions\Microsoft.TestPlatform.Extensions.EventLogCollector.dll'.
+TpTrace Verbose: 0 : 13372, 1, 2021/11/15, 19:02:34.920, 287168774460, datacollector.dll, TestPluginCache.DiscoverTestExtensions: finding test extensions in assemblies ends with: Collector.dll TPluginInfo: Microsoft.VisualStudio.TestPlatform.Common.DataCollector.DataCollectorConfig TExtension: Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollection.DataCollector
+TpTrace Verbose: 0 : 13372, 1, 2021/11/15, 19:02:34.920, 287168777678, datacollector.dll, TestPluginCache.GetExtensionPaths: Filtered extension paths: C:\Program Files\dotnet\sdk\5.0.401\Extensions\Microsoft.TestPlatform.Extensions.BlameDataCollector.dll
+C:\Program Files\dotnet\sdk\5.0.401\Extensions\Microsoft.TestPlatform.Extensions.EventLogCollector.dll
+TpTrace Verbose: 0 : 13372, 1, 2021/11/15, 19:02:34.920, 287168778683, datacollector.dll, TestPluginCache.GetExtensionPaths: Added default extension paths: 
+TpTrace Verbose: 0 : 13372, 1, 2021/11/15, 19:02:34.920, 287168779229, datacollector.dll, TestPluginCache.GetExtensionPaths: Added unfilterableExtensionPaths: 
+TpTrace Information: 0 : 13372, 1, 2021/11/15, 19:02:34.921, 287168788970, datacollector.dll, AssemblyResolver.ctor: Creating AssemblyResolver with searchDirectories C:\Program Files\dotnet\sdk\5.0.401\Extensions,C:\Program Files\dotnet\sdk\5.0.401
+TpTrace Verbose: 0 : 13372, 1, 2021/11/15, 19:02:34.927, 287168846698, datacollector.dll, TestPluginCache.DiscoverTestExtensions: Discovering the extensions using extension path.
+TpTrace Verbose: 0 : 13372, 1, 2021/11/15, 19:02:34.927, 287168849585, datacollector.dll, TestPluginCache.GetExtensionPaths: Filtered extension paths: C:\Program Files\dotnet\sdk\5.0.401\Extensions\Microsoft.TestPlatform.Extensions.BlameDataCollector.dll
+C:\Program Files\dotnet\sdk\5.0.401\Extensions\Microsoft.TestPlatform.Extensions.EventLogCollector.dll
+TpTrace Verbose: 0 : 13372, 1, 2021/11/15, 19:02:34.927, 287168850417, datacollector.dll, TestPluginCache.GetExtensionPaths: Added default extension paths: 
+TpTrace Verbose: 0 : 13372, 1, 2021/11/15, 19:02:34.927, 287168850960, datacollector.dll, TestPluginCache.GetExtensionPaths: Added unfilterableExtensionPaths: 
+TpTrace Verbose: 0 : 13372, 1, 2021/11/15, 19:02:34.927, 287168852025, datacollector.dll, TestPluginCache.DiscoverTestExtensions: Discovering the extensions using allExtensionPaths: C:\Program Files\dotnet\sdk\5.0.401\Extensions\Microsoft.TestPlatform.Extensions.BlameDataCollector.dll
+C:\Program Files\dotnet\sdk\5.0.401\Extensions\Microsoft.TestPlatform.Extensions.EventLogCollector.dll
+TpTrace Information: 0 : 13372, 1, 2021/11/15, 19:02:34.928, 287168853905, datacollector.dll, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories C:\Program Files\dotnet\sdk\5.0.401\Extensions,C:\Program Files\dotnet\sdk\5.0.401
+TpTrace Information: 0 : 13372, 1, 2021/11/15, 19:02:34.928, 287168855391, datacollector.dll, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories C:\Program Files\dotnet\sdk\5.0.401\Extensions,C:\Program Files\dotnet\sdk\5.0.401
+TpTrace Information: 0 : 13372, 1, 2021/11/15, 19:02:34.928, 287168861954, datacollector.dll, AssemblyResolver.OnResolve: Microsoft.TestPlatform.Extensions.BlameDataCollector: Resolving assembly.
+TpTrace Information: 0 : 13372, 1, 2021/11/15, 19:02:34.928, 287168863078, datacollector.dll, AssemblyResolver.OnResolve: Microsoft.TestPlatform.Extensions.BlameDataCollector: Searching in: 'C:\Program Files\dotnet\sdk\5.0.401\Extensions'.
+TpTrace Information: 0 : 13372, 1, 2021/11/15, 19:02:34.930, 287168874624, datacollector.dll, AssemblyResolver.OnResolve: Microsoft.TestPlatform.Extensions.BlameDataCollector: Loading assembly 'C:\Program Files\dotnet\sdk\5.0.401\Extensions\Microsoft.TestPlatform.Extensions.BlameDataCollector.dll'.
+TpTrace Information: 0 : 13372, 1, 2021/11/15, 19:02:34.931, 287168888020, datacollector.dll, AssemblyResolver.OnResolve: Resolved assembly: Microsoft.TestPlatform.Extensions.BlameDataCollector, from path: C:\Program Files\dotnet\sdk\5.0.401\Extensions\Microsoft.TestPlatform.Extensions.BlameDataCollector.dll
+TpTrace Error: 0 : 13372, 1, 2021/11/15, 19:02:34.933, 287168906755, datacollector.dll, The type "Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector" defined in "Microsoft.TestPlatform.Extensions.BlameDataCollector.dll" does not have ExtensionUri attribute.
+TpTrace Information: 0 : 13372, 1, 2021/11/15, 19:02:34.935, 287168929626, datacollector.dll, AssemblyResolver.OnResolve: Microsoft.TestPlatform.Extensions.EventLogCollector: Resolving assembly.
+TpTrace Information: 0 : 13372, 1, 2021/11/15, 19:02:34.935, 287168930915, datacollector.dll, AssemblyResolver.OnResolve: Microsoft.TestPlatform.Extensions.EventLogCollector: Searching in: 'C:\Program Files\dotnet\sdk\5.0.401\Extensions'.
+TpTrace Information: 0 : 13372, 1, 2021/11/15, 19:02:34.936, 287168940849, datacollector.dll, AssemblyResolver.OnResolve: Microsoft.TestPlatform.Extensions.EventLogCollector: Loading assembly 'C:\Program Files\dotnet\sdk\5.0.401\Extensions\Microsoft.TestPlatform.Extensions.EventLogCollector.dll'.
+TpTrace Information: 0 : 13372, 1, 2021/11/15, 19:02:34.937, 287168953089, datacollector.dll, AssemblyResolver.OnResolve: Resolved assembly: Microsoft.TestPlatform.Extensions.EventLogCollector, from path: C:\Program Files\dotnet\sdk\5.0.401\Extensions\Microsoft.TestPlatform.Extensions.EventLogCollector.dll
+TpTrace Error: 0 : 13372, 1, 2021/11/15, 19:02:34.943, 287169004005, datacollector.dll, The type "Microsoft.TestPlatform.Extensions.EventLogCollector.EventLogDataCollector" defined in "Microsoft.TestPlatform.Extensions.EventLogCollector.dll" does not have ExtensionUri attribute.
+TpTrace Verbose: 0 : 13372, 1, 2021/11/15, 19:02:34.943, 287169010302, datacollector.dll, TestPluginCache: Discovered the extensions using extension path 'C:\Program Files\dotnet\sdk\5.0.401\Extensions\Microsoft.TestPlatform.Extensions.BlameDataCollector.dll,C:\Program Files\dotnet\sdk\5.0.401\Extensions\Microsoft.TestPlatform.Extensions.EventLogCollector.dll'.
+TpTrace Verbose: 0 : 13372, 1, 2021/11/15, 19:02:34.943, 287169011271, datacollector.dll, TestPluginCache: Discoverers are ''.
+TpTrace Verbose: 0 : 13372, 1, 2021/11/15, 19:02:34.943, 287169011825, datacollector.dll, TestPluginCache: Executors are ''.
+TpTrace Verbose: 0 : 13372, 1, 2021/11/15, 19:02:34.943, 287169012474, datacollector.dll, TestPluginCache: Executors2 are ''.
+TpTrace Verbose: 0 : 13372, 1, 2021/11/15, 19:02:34.943, 287169012953, datacollector.dll, TestPluginCache: Setting providers are ''.
+TpTrace Verbose: 0 : 13372, 1, 2021/11/15, 19:02:34.943, 287169013458, datacollector.dll, TestPluginCache: Loggers are ''.
+TpTrace Information: 0 : 13372, 1, 2021/11/15, 19:02:34.945, 287169031478, datacollector.dll, TestPluginManager.CreateTestExtension: Attempting to load test extension: Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector
+TpTrace Error: 0 : 13372, 1, 2021/11/15, 19:02:34.946, 287169038495, datacollector.dll, The type "Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector" defined in "Microsoft.TestPlatform.Extensions.BlameDataCollector.dll" does not have ExtensionUri attribute.
+TpTrace Information: 0 : 13372, 1, 2021/11/15, 19:02:34.955, 287169133184, datacollector.dll, Listening on Endpoint : 127.0.0.1:51939
+TpTrace Information: 0 : 13372, 1, 2021/11/15, 19:02:34.966, 287169235398, datacollector.dll, DataCollectionRequestHandler.ProcessRequests : DataCollection started.
+TpTrace Information: 0 : 13372, 1, 2021/11/15, 19:02:35.054, 287170119514, datacollector.dll, DataCollectionRequestHandler.ProcessRequests : Datacollector received message: (DataCollection.TestHostLaunched) -> {
+  "ProcessId": 21544
+}
+TpTrace Information: 0 : 13372, 6, 2021/11/15, 19:02:35.442, 287173999576, datacollector.dll, Using the buffer size of 16384 bytes
+TpTrace Information: 0 : 13372, 6, 2021/11/15, 19:02:35.442, 287174001659, datacollector.dll, Accepted Client request and set the flag
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:38.850, 287208082976, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:38.876, 287208337790, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:38.882, 287208396989, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.ImagesTest.UpdateCategoryAsync_ShouldCreateaCategory - 93c301c2-7334-df37-6d0c-5ac21246c0fa' started.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:38.884, 287208415267, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:38.885, 287208424444, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:38.885, 287208427731, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.CommentsTest.GetCategory_ShouldreturnAnException - a0ac1bc5-e747-9dd4-af8d-abe3e3a82e48' started.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:38.886, 287208439269, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:38.887, 287208447172, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:38.887, 287208450269, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.CategoriesTest.AddCategoryAsync_ShouldthrowAneror - 8c70b674-aecf-7247-e249-b2974b6e5af7' started.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:38.890, 287208480889, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:38.891, 287208488370, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:38.893, 287208506575, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.ProductsTest.GetProduct_ShouldreturnAnException - 6b0cfad8-6b7f-f0e2-b28b-0c8261da8919' started.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:38.894, 287208519134, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:38.895, 287208526009, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:38.895, 287208528970, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.promotionTest.UpdatePromotionAsync_ShouldCreateaCategory - 143d568e-7a51-fb3c-2c4e-0c1617c33a78' started.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:38.896, 287208540004, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:38.897, 287208546296, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:38.897, 287208549139, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.CategoriesTrTest.GetCategory_ShouldReturnFirstCategory - dcc7b0a3-7379-755b-5682-1d85c045ce43' started.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:38.898, 287208559527, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:38.899, 287208566409, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:38.899, 287208569364, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.QuotesTest.DeleteQuotes_ShouldreturnTrue - f7fa703d-02a8-f4ab-2760-e89d8ee3b1e4' started.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:38.900, 287208580850, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:38.901, 287208587172, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:38.901, 287208589816, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.SuscribeTest.UpdateCategoryAsync_ShouldthrowAnInvalidOperatorError - ef456fc0-ab6a-63c9-3dbe-fc4606125043' started.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:40.473, 287224304875, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:40.481, 287224387172, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:40.489, 287224473369, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.CommentsTest.GetCategory_ShouldreturnAnException - a0ac1bc5-e747-9dd4-af8d-abe3e3a82e48' completed
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:40.587, 287225448306, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:40.588, 287225456053, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:40.588, 287225459689, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.SuscribeTest.UpdateCategoryAsync_ShouldthrowAnInvalidOperatorError - ef456fc0-ab6a-63c9-3dbe-fc4606125043' completed
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:40.590, 287225474812, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:40.590, 287225480652, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:40.590, 287225483672, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.QuotesTest.DeleteQuotes_ShouldreturnTrue - f7fa703d-02a8-f4ab-2760-e89d8ee3b1e4' completed
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:40.592, 287225501085, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:40.593, 287225506476, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:40.593, 287225509115, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.ProductsTest.GetProduct_ShouldreturnAnException - 6b0cfad8-6b7f-f0e2-b28b-0c8261da8919' completed
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:40.602, 287225598059, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:40.602, 287225603438, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:40.603, 287225606112, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.ProductsTest.GetProducts_ShouldreturnAllPromotions - 752b55f0-b1dd-968d-5740-1cbaec4bf6db' started.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:40.604, 287225615355, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:40.604, 287225621200, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:40.605, 287225625369, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.QuotesTest.CreateQuoteAsync_ShouldCreateaCategory - 34748d74-ef02-2212-1954-c2e9b0875fde' started.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:40.606, 287225635825, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:40.606, 287225641639, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:40.607, 287225644699, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.SuscribeTest.UpdateCategoryAsync_ShouldCreateaCategory - 5b7f82db-a863-781e-05a4-0e27727ae071' started.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:40.608, 287225654883, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:40.608, 287225659631, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:40.608, 287225661841, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.CommentsTest.GetCategories_ShouldreturnAllCategories - 85ba7b85-66b6-7ae4-7ac6-177bf8731f60' started.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:40.609, 287225672869, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:40.610, 287225678108, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:40.610, 287225680651, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.ImagesTest.UpdateCategoryAsync_ShouldCreateaCategory - 93c301c2-7334-df37-6d0c-5ac21246c0fa' completed
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:40.879, 287228370537, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:40.880, 287228375942, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:40.880, 287228378574, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.ImagesTest.CreateImage_ShouldCreateaCategory - 2ac22c55-f016-d74e-f539-58375a20a593' started.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:40.881, 287228388429, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:40.881, 287228393253, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:40.882, 287228396071, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.CategoriesTrTest.GetCategory_ShouldReturnFirstCategory - dcc7b0a3-7379-755b-5682-1d85c045ce43' completed
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:40.883, 287228410878, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:40.884, 287228415736, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:40.884, 287228418242, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.CategoriesTrTest.GetCategory_ShouldreturnAnException - 61ab66cf-8a9f-e456-7a70-49f8dac98104' started.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:40.885, 287228427886, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:40.885, 287228432716, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:40.886, 287228435526, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.CategoriesTest.AddCategoryAsync_ShouldthrowAneror - 8c70b674-aecf-7247-e249-b2974b6e5af7' completed
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:40.887, 287228450040, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:40.888, 287228455152, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:40.888, 287228458370, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.CategoriesTest.UpdateCategoryAsync_ShouldthrowAnInvalidOperatorError - 8495a583-9e13-9f03-34e2-ca944813af5a' started.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:40.889, 287228468108, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:40.889, 287228473242, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:40.890, 287228476277, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.promotionTest.UpdatePromotionAsync_ShouldCreateaCategory - 143d568e-7a51-fb3c-2c4e-0c1617c33a78' completed
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:40.891, 287228490140, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:40.898, 287228555654, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:40.898, 287228559377, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.promotionTest.UpdatePromotionAsync_ShouldthrowAnError - 2a745b58-e446-c129-61c6-75c502457427' started.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:40.918, 287228755777, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:40.918, 287228761567, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:40.919, 287228764430, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.SuscribeTest.UpdateCategoryAsync_ShouldCreateaCategory - 5b7f82db-a863-781e-05a4-0e27727ae071' completed
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:40.920, 287228775799, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:40.920, 287228780572, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:40.920, 287228783172, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.SuscribeTest.SuscribeCategory_ShouldreturnTrue - 8ed36b93-33e5-cc0b-978d-6e17ddb8bfc1' started.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:40.921, 287228792583, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:40.922, 287228796975, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:40.922, 287228799573, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.ProductsTest.GetProducts_ShouldreturnAllPromotions - 752b55f0-b1dd-968d-5740-1cbaec4bf6db' completed
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:40.925, 287228826739, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:40.925, 287228831240, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:40.925, 287228833711, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.ProductsTest.GetProduct_ShouldreturnOneProduct - 164a9141-2dc2-0666-22a4-27b01ebe7d14' started.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:40.926, 287228842072, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:40.927, 287228846906, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:40.927, 287228849518, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.QuotesTest.CreateQuoteAsync_ShouldCreateaCategory - 34748d74-ef02-2212-1954-c2e9b0875fde' completed
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:40.928, 287228862260, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:40.929, 287228866895, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:40.929, 287228869582, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.QuotesTest.UpdateQuoteAsync_ShouldthrowAnError - 40001b7e-998a-30a1-747d-7d7f1981e8f7' started.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:40.930, 287228877682, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:40.930, 287228882526, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:40.931, 287228885219, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.ImagesTest.CreateImage_ShouldCreateaCategory - 2ac22c55-f016-d74e-f539-58375a20a593' completed
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:40.932, 287228895742, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:40.932, 287228899828, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:40.932, 287228902175, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.ImagesTest.ImagesDelete_ShouldReturnFalse - e25df891-5b7a-05f8-de52-dc5589c01cec' started.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:40.933, 287228912112, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:40.934, 287228916627, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:40.934, 287228919357, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.CategoriesTrTest.GetCategory_ShouldreturnAnException - 61ab66cf-8a9f-e456-7a70-49f8dac98104' completed
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:40.935, 287228930854, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:40.936, 287228935056, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:40.936, 287228937679, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.CategoriesTrTest.UpdateCategoryAsync_ShouldCreateaCategory - 7267a9e0-df31-0ee1-3333-07ff3f2cd41d' started.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:40.937, 287228946079, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:40.937, 287228950891, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:40.937, 287228953753, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.CategoriesTest.UpdateCategoryAsync_ShouldthrowAnInvalidOperatorError - 8495a583-9e13-9f03-34e2-ca944813af5a' completed
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:40.939, 287228966073, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:40.939, 287228970461, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:40.939, 287228972886, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.CategoriesTest.DeleteCategory_ShouldreturnTrue - bc09a356-645a-5bb4-8078-4acfa006eb95' started.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:40.977, 287229349010, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:40.978, 287229355556, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:40.978, 287229358198, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.CommentsTest.GetCategories_ShouldreturnAllCategories - 85ba7b85-66b6-7ae4-7ac6-177bf8731f60' completed
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:40.979, 287229371186, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:40.980, 287229376803, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:40.980, 287229379574, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.SuscribeTest.SuscribeCategory_ShouldreturnTrue - 8ed36b93-33e5-cc0b-978d-6e17ddb8bfc1' completed
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:40.983, 287229410045, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:40.984, 287229416027, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:40.984, 287229418333, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.SuscribeTest.GetSuscribes_ShouldreturnAnException - 9491b845-4ad2-b30a-6d65-085a122fc8ed' started.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.034, 287229922061, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.035, 287229927145, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.035, 287229929349, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.TrTest.GetSuscribes_ShouldreturnAllSuscribes - 0b0b8183-7fdc-b9e2-472d-d1259e4654aa' started.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.047, 287230053201, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.048, 287230058376, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.048, 287230060984, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.promotionTest.UpdatePromotionAsync_ShouldthrowAnError - 2a745b58-e446-c129-61c6-75c502457427' completed
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.049, 287230072342, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.050, 287230076588, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.050, 287230078916, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.promotionTest.GetPromotions_ShouldreturnAllPromotions - b8bce12d-0cd4-5fc3-7474-fdad71011662' started.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.051, 287230087350, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.051, 287230091524, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.052, 287230093971, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.ImagesTest.ImagesDelete_ShouldReturnFalse - e25df891-5b7a-05f8-de52-dc5589c01cec' completed
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.053, 287230105615, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.053, 287230109724, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.053, 287230111860, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.ImagesTest.GetImages_ShouldreturnAnException - 28c62ca6-fa4b-df4d-3d56-01c5bd61a7f1' started.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.054, 287230121352, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.055, 287230127867, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.055, 287230131409, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.CategoriesTest.DeleteCategory_ShouldreturnTrue - bc09a356-645a-5bb4-8078-4acfa006eb95' completed
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.057, 287230146556, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.057, 287230151070, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.058, 287230153964, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.CategoriesTest.GetCategory_ShouldreturnAnException - 47045634-4968-a7f8-ad96-77b4c9a3d941' started.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.062, 287230196870, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.062, 287230201833, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.063, 287230205573, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.QuotesTest.UpdateQuoteAsync_ShouldthrowAnError - 40001b7e-998a-30a1-747d-7d7f1981e8f7' completed
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.065, 287230231178, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.066, 287230236099, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.066, 287230238713, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.QuotesTest.GetQuotes_ShouldReturnFirstQuotes - e547cc4c-6de8-76b7-e691-50e97cae055b' started.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.116, 287230738635, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.116, 287230743397, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.117, 287230745912, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.ProductsTest.GetProduct_ShouldreturnOneProduct - 164a9141-2dc2-0666-22a4-27b01ebe7d14' completed
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.130, 287230880201, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.131, 287230884918, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.131, 287230887542, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.SuscribeTest.GetSuscribes_ShouldreturnAnException - 9491b845-4ad2-b30a-6d65-085a122fc8ed' completed
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.184, 287231417498, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.184, 287231422463, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.185, 287231424894, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.SuscribeTest.GetSuscribes_ShouldreturnAllSuscribes - f118a47b-0598-9cab-1389-2ee1be5e6b50' started.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.200, 287231576932, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.200, 287231582087, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.201, 287231584821, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.CategoriesTest.GetCategory_ShouldreturnAnException - 47045634-4968-a7f8-ad96-77b4c9a3d941' completed
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.202, 287231596867, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.202, 287231600904, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.202, 287231603195, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.CategoriesTest.GetCategory_ShouldReturnFirstCategory - cf7c5395-389c-b647-8ab6-fc2749388b11' started.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.215, 287231728072, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.215, 287231733087, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.216, 287231735976, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.promotionTest.GetPromotions_ShouldreturnAllPromotions - b8bce12d-0cd4-5fc3-7474-fdad71011662' completed
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.217, 287231748416, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.218, 287231754374, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.218, 287231756911, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.promotionTest.UpdateCategoryAsync_ShouldthrowAnInvalidOperatorError - 94f22c4c-dcb7-3257-6611-e96079f4ff95' started.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.240, 287231983567, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.241, 287231988491, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.241, 287231991379, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.QuotesTest.GetQuotes_ShouldReturnFirstQuotes - e547cc4c-6de8-76b7-e691-50e97cae055b' completed
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.243, 287232004572, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.243, 287232009055, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.243, 287232011520, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.QuotesTest.GetQuotes_ShouldreturnAnException - de5a7ede-babc-c369-a2fa-cfa21c73c4d7' started.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.301, 287232587939, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.301, 287232592568, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.302, 287232595367, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.ImagesTest.GetImages_ShouldreturnAnException - 28c62ca6-fa4b-df4d-3d56-01c5bd61a7f1' completed
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.305, 287232631612, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.306, 287232636621, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.306, 287232639273, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.ImagesTest.UpdateCategoryAsync_ShouldthrowAnError - 7c594887-a5a7-8ae5-48a4-293af8820eaa' started.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.316, 287232742779, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.317, 287232747482, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.317, 287232750088, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.TrTest.GetSuscribes_ShouldreturnAllSuscribes - 0b0b8183-7fdc-b9e2-472d-d1259e4654aa' completed
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.355, 287233128835, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.356, 287233134509, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.356, 287233137104, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.TrTest.GetQuotes_ShouldreturnAnException - ea7d38d0-81ff-6f39-0b74-315910bb053a' started.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.394, 287233517973, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.394, 287233522941, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.395, 287233525627, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.QuotesTest.GetQuotes_ShouldreturnAnException - de5a7ede-babc-c369-a2fa-cfa21c73c4d7' completed
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.396, 287233537966, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.396, 287233542218, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.397, 287233544517, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.QuotesTest.DeleteQuotes_ShouldreturnFalse - 5d392bd2-1f07-3fcd-da66-7603773c2e1e' started.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.427, 287233853517, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.428, 287233858061, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.428, 287233860721, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.SuscribeTest.GetSuscribes_ShouldreturnAllSuscribes - f118a47b-0598-9cab-1389-2ee1be5e6b50' completed
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.429, 287233872146, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.430, 287233876473, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.430, 287233878780, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.SuscribeTest.GetSuscribe_ShouldReturnFirstSuscribe - 4d0e60b2-cccb-b393-d6b5-bf154b93f830' started.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.469, 287234270053, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.470, 287234275889, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.470, 287234279565, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.promotionTest.UpdateCategoryAsync_ShouldthrowAnInvalidOperatorError - 94f22c4c-dcb7-3257-6611-e96079f4ff95' completed
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.472, 287234295814, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.472, 287234301498, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.473, 287234304120, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.promotionTest.AddpromotionAsync_ShouldCreateaCategory - f40584e5-1950-1eaa-4049-ac285088b528' started.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.526, 287234842283, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.527, 287234846543, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.527, 287234849065, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.QuotesTest.DeleteQuotes_ShouldreturnFalse - 5d392bd2-1f07-3fcd-da66-7603773c2e1e' completed
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.530, 287234882897, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.531, 287234887278, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.531, 287234889698, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.QuotesTest.GetQuotes_ShouldreturnAllQuotes - 9bbb291c-e504-9ca6-ab4f-c115aab940b7' started.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.573, 287235311365, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.574, 287235316114, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.574, 287235318712, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.SuscribeTest.GetSuscribe_ShouldReturnFirstSuscribe - 4d0e60b2-cccb-b393-d6b5-bf154b93f830' completed
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.632, 287235899922, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.633, 287235904856, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.633, 287235907267, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.TrTest.GetQuotes_ShouldreturnAnException - ea7d38d0-81ff-6f39-0b74-315910bb053a' completed
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.635, 287235925817, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.635, 287235930289, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.635, 287235932458, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.TrTest.GetTr_ShouldReturnFirstQuotes - e4b7125d-8c2d-5aa4-84a2-85d618ae8324' started.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.636, 287235941629, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.637, 287235946330, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.637, 287235948684, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.ImagesTest.UpdateCategoryAsync_ShouldthrowAnError - 7c594887-a5a7-8ae5-48a4-293af8820eaa' completed
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.638, 287235961341, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.639, 287235965713, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.639, 287235967910, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.ImagesTest.AddCategoryAsync_ShouldthrowAneror - e6e15b6f-5e6d-c711-0569-dfa88e7cdc71' started.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.640, 287235977598, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.640, 287235982339, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.641, 287235984939, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.CategoriesTest.GetCategory_ShouldReturnFirstCategory - cf7c5395-389c-b647-8ab6-fc2749388b11' completed
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.642, 287235997055, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.642, 287236001194, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.642, 287236003431, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.CategoriesTest.UpdateCategoryAsync_ShouldthrowAnError - dfd3f0ec-407e-034c-e696-567944ab28c2' started.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.651, 287236086691, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.651, 287236091747, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.652, 287236094160, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.CategoriesTrTest.UpdateCategoryAsync_ShouldCreateaCategory - 7267a9e0-df31-0ee1-3333-07ff3f2cd41d' completed
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.653, 287236107174, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.653, 287236111604, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.654, 287236114063, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.CategoriesTrTest.DeleteCategory_ShouldreturnTrue - 5c3e5b51-e996-6268-67bb-4bd2ea0c8c42' started.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.798, 287237555119, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.798, 287237560984, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.799, 287237564170, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.promotionTest.AddpromotionAsync_ShouldCreateaCategory - f40584e5-1950-1eaa-4049-ac285088b528' completed
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.802, 287237599856, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.803, 287237606223, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.803, 287237608612, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.promotionTest.GetPromotion_ShouldreturnAnException - d04ecf4d-3cef-ee8a-5aca-a197ebf635df' started.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.804, 287237617202, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.804, 287237620968, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.804, 287237623321, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.QuotesTest.GetQuotes_ShouldreturnAllQuotes - 9bbb291c-e504-9ca6-ab4f-c115aab940b7' completed
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.815, 287237730172, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.816, 287237734673, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.816, 287237736910, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.CategoriesTrTest.DeleteCategory_ShouldreturnTrue - 5c3e5b51-e996-6268-67bb-4bd2ea0c8c42' completed
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.817, 287237750677, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.818, 287237755923, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.818, 287237758141, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.CategoriesTrTest.DeleteCategory_ShouldreturnFalse - c0748569-f33a-7ddd-e0e9-1f477a4cd7a7' started.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.837, 287237947132, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.837, 287237952787, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.838, 287237955427, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.ImagesTest.AddCategoryAsync_ShouldthrowAneror - e6e15b6f-5e6d-c711-0569-dfa88e7cdc71' completed
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.839, 287237968055, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.839, 287237972127, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.840, 287237974424, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.ImagesTest.UpdateCategoryAsync_ShouldthrowAnInvalidOperatorError - c86633e5-0b18-b68a-bdba-5f2f9e234d07' started.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.855, 287238127475, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.855, 287238133049, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.856, 287238136034, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.TrTest.GetTr_ShouldReturnFirstQuotes - e4b7125d-8c2d-5aa4-84a2-85d618ae8324' completed
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.932, 287238903040, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.933, 287238908589, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.933, 287238911335, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.ImagesTest.UpdateCategoryAsync_ShouldthrowAnInvalidOperatorError - c86633e5-0b18-b68a-bdba-5f2f9e234d07' completed
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.934, 287238923391, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.935, 287238927873, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.935, 287238929836, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.ImagesTest.GetImages_ShouldReturnFirstImages - 40c0e8af-ab21-8f36-b38b-56ce019f9aae' started.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.939, 287238969947, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.940, 287238974148, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.940, 287238976487, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.CategoriesTrTest.DeleteCategory_ShouldreturnFalse - c0748569-f33a-7ddd-e0e9-1f477a4cd7a7' completed
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.941, 287238988546, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.941, 287238993122, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.942, 287238995298, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.CategoriesTrTest.UpdateCategoryAsync_ShouldthrowAnError - 60427666-b7dc-5b6a-fdd8-19352e25defb' started.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.943, 287239004636, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.943, 287239008380, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.943, 287239010554, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.promotionTest.GetPromotion_ShouldreturnAnException - d04ecf4d-3cef-ee8a-5aca-a197ebf635df' completed
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.946, 287239037760, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.946, 287239041696, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:41.946, 287239043724, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.promotionTest.GetPromotion_ShouldreturnOnePromotion - e7e3dbd2-ba8e-7f1c-a0ca-a93edd45632f' started.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:42.042, 287239999726, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:42.043, 287240004195, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:42.043, 287240006567, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.CategoriesTest.UpdateCategoryAsync_ShouldthrowAnError - dfd3f0ec-407e-034c-e696-567944ab28c2' completed
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:42.044, 287240023101, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:42.045, 287240027740, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:42.045, 287240030216, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.CategoriesTest.GetCategories_ShouldreturnAllCategories - 51623570-e981-57fa-78ad-1920370872ed' started.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:42.054, 287240122210, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:42.055, 287240128641, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:42.055, 287240131059, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.ImagesTest.GetImages_ShouldReturnFirstImages - 40c0e8af-ab21-8f36-b38b-56ce019f9aae' completed
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:42.056, 287240143083, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:42.057, 287240147018, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:42.057, 287240148903, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.ImagesTest.ImagesDelete_ShouldreturnTrue - 481023c9-98bd-aa39-551b-761c9d2accc2' started.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:42.106, 287240643796, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:42.107, 287240649523, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:42.107, 287240653297, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.promotionTest.GetPromotion_ShouldreturnOnePromotion - e7e3dbd2-ba8e-7f1c-a0ca-a93edd45632f' completed
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:42.109, 287240667272, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:42.109, 287240671586, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:42.110, 287240674014, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.promotionTest.AddPromotionAsync_ShouldthrowAneror - 3e554aca-68ed-ada9-fc30-ac055e1e69b0' started.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:42.149, 287241067655, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:42.149, 287241071987, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:42.150, 287241074210, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.ImagesTest.ImagesDelete_ShouldreturnTrue - 481023c9-98bd-aa39-551b-761c9d2accc2' completed
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:42.159, 287241169173, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:42.159, 287241173532, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:42.160, 287241175890, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.CategoriesTrTest.UpdateCategoryAsync_ShouldthrowAnError - 60427666-b7dc-5b6a-fdd8-19352e25defb' completed
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:42.161, 287241189643, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:42.162, 287241194266, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:42.162, 287241196622, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.CategoriesTrTest.AddCategoryAsync_ShouldCreateaCategory - e3f21bc6-a21f-6736-b919-b273ebfe4a94' started.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:42.288, 287242460601, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:42.289, 287242465762, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:42.289, 287242468041, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.promotionTest.AddPromotionAsync_ShouldthrowAneror - 3e554aca-68ed-ada9-fc30-ac055e1e69b0' completed
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:42.290, 287242479969, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:42.291, 287242484366, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:42.291, 287242486579, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.promotionTest.DeletePromotion_ShouldreturnTrue - a8b02623-e403-3bc3-80fc-8afbdab6ccc0' started.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:42.298, 287242562722, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:42.299, 287242569128, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:42.299, 287242571545, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.CategoriesTest.GetCategories_ShouldreturnAllCategories - 51623570-e981-57fa-78ad-1920370872ed' completed
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:42.303, 287242607508, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:42.303, 287242611828, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:42.304, 287242614039, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.CategoriesTest.DeleteCategory_ShouldreturnFalse - 11590f83-18bd-f1e5-3d27-523a369d2175' started.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:42.377, 287243345284, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:42.377, 287243350080, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:42.377, 287243352642, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.promotionTest.DeletePromotion_ShouldreturnTrue - a8b02623-e403-3bc3-80fc-8afbdab6ccc0' completed
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:42.394, 287243516617, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:42.394, 287243520771, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:42.394, 287243523788, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.CategoriesTest.DeleteCategory_ShouldreturnFalse - 11590f83-18bd-f1e5-3d27-523a369d2175' completed
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:42.396, 287243539785, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:42.397, 287243544111, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:42.397, 287243546199, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.CategoriesTest.AddCategoryAsync_ShouldCreateaCategory - 8fd84f3a-29c3-c74e-3b3f-4772511821ae' started.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:42.473, 287244313748, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:42.474, 287244318480, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:42.474, 287244320907, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.CategoriesTrTest.AddCategoryAsync_ShouldCreateaCategory - e3f21bc6-a21f-6736-b919-b273ebfe4a94' completed
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:42.476, 287244334347, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:42.476, 287244339316, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:42.476, 287244341800, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.CategoriesTrTest.UpdateCategoryAsync_ShouldthrowAnInvalidOperatorError - 28ce242e-160e-83bd-6c02-7e0b45ae0b95' started.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:42.540, 287244980426, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:42.541, 287244987285, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:42.541, 287244990141, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.CategoriesTrTest.UpdateCategoryAsync_ShouldthrowAnInvalidOperatorError - 28ce242e-160e-83bd-6c02-7e0b45ae0b95' completed
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:42.542, 287245003216, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:42.549, 287245066327, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:42.549, 287245069579, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.CategoriesTrTest.AddCategoryAsync_ShouldthrowAneror - 19ed53e1-cef8-0cad-e6c2-baa469be54f1' started.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:42.661, 287246191168, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:42.662, 287246195608, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:42.662, 287246197938, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.CategoriesTest.AddCategoryAsync_ShouldCreateaCategory - 8fd84f3a-29c3-c74e-3b3f-4772511821ae' completed
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:42.663, 287246208361, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:42.663, 287246212357, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:42.664, 287246214373, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.CategoriesTest.UpdateCategoryAsync_ShouldCreateaCategory - fde4b75a-aaa8-0aa7-ef10-a560c814a7de' started.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:42.728, 287246860020, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:42.729, 287246865423, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:42.729, 287246868126, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.CategoriesTrTest.AddCategoryAsync_ShouldthrowAneror - 19ed53e1-cef8-0cad-e6c2-baa469be54f1' completed
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:42.730, 287246878103, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:42.730, 287246880663, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:42.730, 287246882513, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.CategoriesTrTest.GetCategories_ShouldreturnAllCategories - 78d80811-0bf9-d05a-0bd9-6754068527ed' started.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:42.894, 287248521763, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:42.895, 287248524581, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:42.895, 287248526148, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.CategoriesTest.UpdateCategoryAsync_ShouldCreateaCategory - fde4b75a-aaa8-0aa7-ef10-a560c814a7de' completed
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:42.901, 287248585457, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:42.901, 287248589635, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:42.901, 287248591837, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EcomakTest.CategoriesTrTest.GetCategories_ShouldreturnAllCategories - 78d80811-0bf9-d05a-0bd9-6754068527ed' completed
+TpTrace Information: 0 : 13372, 4, 2021/11/15, 19:02:42.923, 287248806726, datacollector.dll, DataCollectionTestCaseEventHandler: Test session ended
+TpTrace Information: 0 : 13372, 1, 2021/11/15, 19:02:43.046, 287250037557, datacollector.dll, DataCollectionRequestHandler.ProcessRequests : Datacollector received message: (DataCollection.AfterTestRunEnd) -> false
+TpTrace Information: 0 : 13372, 1, 2021/11/15, 19:02:43.047, 287250047220, datacollector.dll, Blame Collector : Session End
+TpTrace Information: 0 : 13372, 1, 2021/11/15, 19:02:43.047, 287250048432, datacollector.dll, BlameCollector.CollectDumpAndAbortTesthost: Custom path to dump directory was provided via VSTEST_DUMP_PATH. Skipping attachment upload, the caller is responsible for collecting and uploading the dumps themselves.
+TpTrace Information: 0 : 13372, 1, 2021/11/15, 19:02:43.047, 287250050914, datacollector.dll, DataCollectionManager.CleanupPlugins: CleanupPlugins called
+TpTrace Verbose: 0 : 13372, 1, 2021/11/15, 19:02:43.047, 287250051945, datacollector.dll, DataCollectionManager.CleanupPlugins: Cleaning up 1 plugins
+TpTrace Verbose: 0 : 13372, 1, 2021/11/15, 19:02:43.048, 287250054297, datacollector.dll, dataCollectorInfo.DisposeDataCollector: calling Dispose() on Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector
+TpTrace Information: 0 : 13372, 1, 2021/11/15, 19:02:43.048, 287250055977, datacollector.dll, DataCollectionManager.CleanupPlugins: CleanupPlugins finished
+TpTrace Information: 0 : 13372, 1, 2021/11/15, 19:02:43.053, 287250110716, datacollector.dll, DataCollectionRequestHandler.ProcessRequests : Session End message received from server. Closing the connection.
+TpTrace Information: 0 : 13372, 1, 2021/11/15, 19:02:43.054, 287250114324, datacollector.dll, Closing the connection !
+TpTrace Information: 0 : 13372, 1, 2021/11/15, 19:02:43.054, 287250115403, datacollector.dll, DataCollectionRequestHandler.ProcessRequests : DataCollection completed
+TpTrace Information: 0 : 13372, 1, 2021/11/15, 19:02:43.054, 287250116268, datacollector.dll, Program.Main: exiting datacollector process.
