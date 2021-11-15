@@ -41,20 +41,20 @@ namespace EcomakTests
             var cat1 = await categoriesService.GetCategoryAsync(1, false);
             
 
-
+            
             Assert.IsInstanceOf<Category>(cat1);
             Assert.AreEqual(cat1.Id, 1);
             Assert.AreEqual(cat1.Name, "Cumpleaños");
         }
         [Test]
-        public async Task GetCategory_ShouldreturnAnException()
+        public void GetCategory_ShouldreturnAnException()
         {
             var categoriesService = GetCategoriesService();
             //act 
-            var cat1 = await categoriesService.GetCategoryAsync(69, false);
+            var cat1 = categoriesService.GetCategoryAsync(19, false);
 
 
-            Assert.ThrowsAsync<NotFoundItemException>(async () => await categoriesService.GetCategoryAsync(1, false));
+            Assert.ThrowsAsync<NotFoundItemException>(() => cat1);
             /*
             Assert.IsInstanceOf<Category>(cat1);
             Assert.AreEqual(cat1.Id, 1);

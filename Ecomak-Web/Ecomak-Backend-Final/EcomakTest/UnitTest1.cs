@@ -37,14 +37,10 @@ namespace EcomakTest
         {
             var categoriesService = GetCategoriesService();
             //act 
-            var cat1 = categoriesService.GetCategoryAsync(69, false);
+            var cat1 = categoriesService.GetCategoryAsync(19, false);
 
         
             await Assert.ThrowsAsync<NotFoundItemException>(() => cat1);
-            /*
-            Assert.IsInstanceOf<Category>(cat1);
-            Assert.AreEqual(cat1.Id, 1);
-            Assert.AreEqual(cat1.Name, "Cumpleaños");*/
         }
 
         private CategoriesService GetCategoriesService()
