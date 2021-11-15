@@ -1,0 +1,193 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\MARCO\\Documents\\Marco\\Cato\\10to semestre\\Gestion de Calidad de Sistemas\\Nueva carpeta\\Calidad-SQ-Ecomak\\Ecomak-Web\\Ecomak-Backend-Final\\EcomakTests\\EcomakTests.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\MARCO\\Documents\\Marco\\Cato\\10to semestre\\Gestion de Calidad de Sistemas\\Nueva carpeta\\Calidad-SQ-Ecomak\\Ecomak-Web\\Ecomak-Backend-Final\\EcomakTests\\EcomakTests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\MARCO\\Documents\\Marco\\Cato\\10to semestre\\Gestion de Calidad de Sistemas\\Nueva carpeta\\Calidad-SQ-Ecomak\\Ecomak-Web\\Ecomak-Backend-Final\\EcomakTests\\EcomakTests.csproj",
+        "projectName": "EcomakTests",
+        "projectPath": "C:\\Users\\MARCO\\Documents\\Marco\\Cato\\10to semestre\\Gestion de Calidad de Sistemas\\Nueva carpeta\\Calidad-SQ-Ecomak\\Ecomak-Web\\Ecomak-Backend-Final\\EcomakTests\\EcomakTests.csproj",
+        "packagesPath": "C:\\Users\\MARCO\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\MARCO\\Documents\\Marco\\Cato\\10to semestre\\Gestion de Calidad de Sistemas\\Nueva carpeta\\Calidad-SQ-Ecomak\\Ecomak-Web\\Ecomak-Backend-Final\\EcomakTests\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\MARCO\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "targetAlias": "netcoreapp2.2",
+            "projectReferences": {
+              "C:\\Users\\MARCO\\Documents\\Marco\\Cato\\10to semestre\\Gestion de Calidad de Sistemas\\Nueva carpeta\\Calidad-SQ-Ecomak\\Ecomak-Web\\Ecomak-Backend-Final\\Ecomak\\Ecomak.csproj": {
+                "projectPath": "C:\\Users\\MARCO\\Documents\\Marco\\Cato\\10to semestre\\Gestion de Calidad de Sistemas\\Nueva carpeta\\Calidad-SQ-Ecomak\\Ecomak-Web\\Ecomak-Backend-Final\\Ecomak\\Ecomak.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "targetAlias": "netcoreapp2.2",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.5.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.16.1, )"
+            },
+            "NUnit": {
+              "target": "Package",
+              "version": "[3.12.0, )"
+            },
+            "NUnit3TestAdapter": {
+              "target": "Package",
+              "version": "[3.16.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.300\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\MARCO\\Documents\\Marco\\Cato\\10to semestre\\Gestion de Calidad de Sistemas\\Nueva carpeta\\Calidad-SQ-Ecomak\\Ecomak-Web\\Ecomak-Backend-Final\\Ecomak\\Ecomak.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\MARCO\\Documents\\Marco\\Cato\\10to semestre\\Gestion de Calidad de Sistemas\\Nueva carpeta\\Calidad-SQ-Ecomak\\Ecomak-Web\\Ecomak-Backend-Final\\Ecomak\\Ecomak.csproj",
+        "projectName": "Ecomak",
+        "projectPath": "C:\\Users\\MARCO\\Documents\\Marco\\Cato\\10to semestre\\Gestion de Calidad de Sistemas\\Nueva carpeta\\Calidad-SQ-Ecomak\\Ecomak-Web\\Ecomak-Backend-Final\\Ecomak\\Ecomak.csproj",
+        "packagesPath": "C:\\Users\\MARCO\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\MARCO\\Documents\\Marco\\Cato\\10to semestre\\Gestion de Calidad de Sistemas\\Nueva carpeta\\Calidad-SQ-Ecomak\\Ecomak-Web\\Ecomak-Backend-Final\\Ecomak\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\MARCO\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "targetAlias": "netcoreapp2.2",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "targetAlias": "netcoreapp2.2",
+          "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.AspNetCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Identity": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Razor.Design": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[2.2.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.6, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[2.2.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.300\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
