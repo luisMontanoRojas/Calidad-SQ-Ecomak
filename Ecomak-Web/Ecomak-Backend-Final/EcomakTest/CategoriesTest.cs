@@ -19,45 +19,42 @@ namespace EcomakTest
         {
             var categoriesService = GetCategoriesService();
             //act 
-            var cat1 = await categoriesService.GetCategoryAsync(1, false);
-            IEnumerable<Product> p = new List<Product>();
-            IEnumerable<Tr> t = new List<Tr>();
+            var cat = await categoriesService.GetCategoryAsync(1, false);
 
-            var cat2 = new Category { Id = 1, Name = "Cumpleaños", CantProducts = 0, CantTrs = 0 , products = p, trs = t};
+            //result
 
-            Assert.NotStrictEqual(cat1, cat2);
+            Assert.IsType<Category>(cat);
+            Assert.Equal(1, cat.Id);
+            Assert.Equal("Cumpleaños", cat.Name);
         }
         [Fact]
-        public async Task GetCategory_ShouldreturnSecondCategory()
+        public async Task DeleteCategory_ShouldreturnTrue()
         {
             var categoriesService = GetCategoriesService();
             //act 
-            var cat1 = await categoriesService.GetCategoryAsync(2, false);
-            IEnumerable<Product> p = new List<Product>();
-            IEnumerable<Tr> t = new List<Tr>();
+            var res = await categoriesService.DeleteCategoryAsync(1);
 
-            var cat2 = new Category { Id = 2, Name = "Comida", CantProducts = 0, CantTrs = 0, products = p, trs = t };
+            //result
 
-            Assert.NotStrictEqual(cat1, cat2);
+            Assert.True(res);
         }
         [Fact]
         public async Task GetCategories_ShouldreturnAllCategories()
         {
             var categoriesService = GetCategoriesService();
             //act 
-            var cat1 = await categoriesService.GetCategoriesAsync("id", false);
+            var cat = await categoriesService.GetCategoriesAsync("id", false);
 
-            Assert.IsAssignableFrom<IEnumerable<Category>>(cat1);
-            //Assert.NotStrictEqual(cat1, cat2);
+            Assert.IsAssignableFrom<IEnumerable<Category>>(cat);
         }
         [Fact]
         public async Task GetCategory_ShouldreturnAnException()
         {
             var categoriesService = GetCategoriesService();
             //act 
-            var cat1 = categoriesService.GetCategoryAsync(19, false);
+            var cat = categoriesService.GetCategoryAsync(19, false);
 
-            await Assert.ThrowsAsync<NotFoundItemException>(() => cat1);
+            await Assert.ThrowsAsync<NotFoundItemException>(() => cat);
         }
 
         private CategoriesService GetCategoriesService()
@@ -72,6 +69,9 @@ namespace EcomakTest
             foreach(CategoryEntity cat in testCategoriesIE)
             {
                 MoqlibraryRespository.Setup(m => m.GetCategoryAsync(cat.Id, false)).Returns(Task.FromResult(cat));
+                MoqlibraryRespository.Setup(m => m.DeleteCategoryAsync(cat.Id));
+                MoqlibraryRespository.Setup(m => m.DetachEntity(cat)); 
+                MoqlibraryRespository.Setup(m => m.SaveChangesAsync()).Returns(Task.FromResult(true));
             }
 
             MoqlibraryRespository.Setup(m => m.GetCategories("id", false)).Returns(Task.FromResult(testCategoriesIE));
